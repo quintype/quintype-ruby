@@ -29,6 +29,18 @@ class API
     _get("/api/stories/#{story_id}")
   end
 
+  def story_by_slug(slug)
+    _get("/api/stories-by-slug", { slug: slug })
+  end
+
+  def related_stories(story_id, section, fields = [])
+    _get("/api/related-stories?", {
+      "story-id": story_id,
+      section: section,
+      fields: make_fields(fields)
+    })
+  end
+
   def stories(params, options = {})
     url = options[:facets] ? "/stories-with-facets" : "/stories"
     _get(api_base + url, params)
@@ -173,5 +185,9 @@ class API
 
   def keywordize(obj)
     obj.deep_transform_keys { |k| k.gsub('-', '_').to_sym }
+  end
+
+  def make_fields(arr)
+    arr.join(',') if arr.present?
   end
 end
