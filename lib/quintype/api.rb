@@ -184,7 +184,7 @@ class API
   end
 
   def keywordize(obj)
-    obj.deep_transform_keys { |k| k.gsub('-', '_').to_sym }
+    obj.deep_transform_keys { |k| k.gsub('-', '_') }
   end
 
   def make_fields(arr)
