@@ -35,7 +35,7 @@ class API
 
   def related_stories(story_id, section, fields = [])
     _get("/api/related-stories?", {
-      "story-id": story_id,
+      "story-id" => story_id,
       section: section,
       fields: make_fields(fields)
     })
