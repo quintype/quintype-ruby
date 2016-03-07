@@ -3,10 +3,12 @@ require 'json'
 require 'active_support/all'
 
 class API
-  attr_reader :host, :conn
+  attr_reader :host, :conn, :bulk
 
   def initialize(host)
     @host = host
+    @bulk = BulkAPI.new(self)
+
     setup_connection
   end
 
@@ -21,20 +23,24 @@ class API
     end
   end
 
+  def bulk_post(params)
+    _post("#{api_base}/bulk", params)
+  end
+
   def config
     _get("#{api_base}/config")
   end
 
   def story(story_id)
-    _get("/api/stories/#{story_id}")
+    _get("#{api_base}/stories/#{story_id}")
   end
 
   def story_by_slug(slug)
-    _get("/api/stories-by-slug", { slug: slug })
+    _get("#{api_base}/stories-by-slug", { slug: slug })
   end
 
   def related_stories(story_id, section, fields = [])
-    _get("/api/related-stories?", {
+    _get("#{api_base}/related-stories?", {
       "story-id" => story_id,
       section: section,
       fields: make_fields(fields)
@@ -159,8 +165,13 @@ class API
 
   private
 
-  def _post(*args)
-    response = conn.post(*args)
+  def _post(url, body)
+    response = conn.post(url) do |request|
+      request.options.timeout = 20
+      request.headers['Content-Type'] = 'application/json'
+      request.body = body.to_json
+    end
+
     body = JSON.parse(response.body)
 
     case body
