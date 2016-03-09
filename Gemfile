@@ -8,4 +8,10 @@ end
 
 group :development, :test do
   gem 'pry'
+  gem 'byebug'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end

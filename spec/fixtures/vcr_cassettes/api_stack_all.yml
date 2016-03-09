@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8001/api/config
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Mar 2016 09:42:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Jetty(9.2.10.v20150310)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sketches-host":"http://localhost:8001","publisher":{"id":1,"name":"local_thequint"},"facebook":{"app-id":"1534865790101524"},"sections":[{"id":143,"name":"InfoGraphiQ","display-name":null,"slug":"infographiq"},{"id":72,"name":"Women","display-name":null,"slug":"women"},{"id":276,"name":"Delhi
+        Auto Expo 2016","display-name":"Delhi Auto Expo 2016","slug":"delhi-auto-expo-2016"},{"id":2,"name":"Business","display-name":null,"slug":"business"},{"id":62,"name":"Hot
+        Wire","display-name":null,"slug":"hot-wire"},{"id":64,"name":"Blogs","display-name":null,"slug":"blogs"},{"id":97,"name":"TorQue","display-name":null,"slug":"torque"},{"id":85,"name":"Bihar
+        Elections","display-name":"Bihar Mobile 2015","slug":"bihar-elections"},{"id":144,"name":"Love
+        & Sex","display-name":null,"slug":"love-sex"},{"id":146,"name":"LGBTQ","display-name":null,"slug":"lgbtq"},{"id":17,"name":"World","display-name":null,"slug":"world"},{"id":5,"name":"India","display-name":null,"slug":"india"},{"id":56,"name":"Health
+        & Fitness","display-name":null,"slug":"health-fitness"},{"id":145,"name":"QReview","display-name":null,"slug":"qreview"},{"id":147,"name":"Wine
+        & Dine","display-name":null,"slug":"wine-dine"},{"id":16,"name":"WaterQooler","display-name":null,"slug":"waterqooler"},{"id":9,"name":"Photos","display-name":null,"slug":"photos"},{"id":6,"name":"Life","display-name":null,"slug":"life"},{"id":13,"name":"Sports","display-name":null,"slug":"sports"},{"id":232,"name":"Pathankot
+        Attack","display-name":"Pathankot Attack","slug":"pathankot-attack"},{"id":189,"name":"Chennai
+        Floods","display-name":"Chennai Floods","slug":"chennai-floods"},{"id":254,"name":"Letter
+        To India","display-name":"Letter To India","slug":"letter-to-india"},{"id":7,"name":"Opinion","display-name":null,"slug":"opinion"},{"id":12,"name":"Politics","display-name":null,"slug":"politics"},{"id":14,"name":"Technology","display-name":null,"slug":"technology"},{"id":3,"name":"Entertainment","display-name":null,"slug":"entertainment"},{"id":15,"name":"Videos","display-name":null,"slug":"videos"},{"id":54,"name":"DeQoded","display-name":null,"slug":"deqoded"}],"social-links":null,"layout":{"stories-between-stacks":4,"menu":[{"updated-at":1450224734341,"tag-name":null,"publisher-id":1,"item-id":15,"rank":1,"title":"Videos","item-type":"section","section-slug":"videos","id":16,"created-at":1437549738996,"section-name":"Videos","data":{"color":"#555555"}},{"updated-at":1454313116949,"tag-name":null,"publisher-id":1,"item-id":276,"rank":5,"title":"Delhi
+        Auto Expo 2016","item-type":"section","section-slug":"delhi-auto-expo-2016","id":144,"created-at":1454306041874,"section-name":"Delhi
+        Auto Expo 2016","data":{"color":"#990432"}},{"updated-at":1454313163097,"tag-name":null,"publisher-id":1,"item-id":3,"rank":6,"title":"Entertainment","item-type":"section","section-slug":"entertainment","id":6,"created-at":1437549738996,"section-name":"Entertainment","data":{"color":"#0078BE"}},{"updated-at":1454313164839,"tag-name":null,"publisher-id":1,"item-id":13,"rank":7,"title":"Sports","item-type":"section","section-slug":"sports","id":7,"created-at":1437549738996,"section-name":"Sports","data":{"color":"#00BE46"}},{"updated-at":1454313167360,"tag-name":null,"publisher-id":1,"item-id":14,"rank":8,"title":"Technology","item-type":"section","section-slug":"technology","id":8,"created-at":1437549738996,"section-name":"Technology","data":{"color":"#FFA01E"}},{"updated-at":1454313169264,"tag-name":null,"publisher-id":1,"item-id":7,"rank":9,"title":"Opinion","item-type":"section","section-slug":"opinion","id":5,"created-at":1437549738996,"section-name":"Opinion","data":{"color":"#ffa01e"}},{"updated-at":1454313169265,"tag-name":null,"publisher-id":1,"item-id":254,"rank":10,"title":"Letter
+        to India<br/><em>Brought to you by Motorola</em>","item-type":"section","section-slug":"letter-to-india","id":135,"created-at":1453371355888,"section-name":"Letter
+        To India","data":{"color":"#000000"}},{"updated-at":1454313130479,"tag-name":null,"publisher-id":1,"item-id":56,"rank":11,"title":"Health
+        & Fitness","item-type":"section","section-slug":"health-fitness","id":12,"created-at":1437549738996,"section-name":"Health
+        & Fitness","data":{"color":"#5D0060"}},{"updated-at":1454313132154,"tag-name":null,"publisher-id":1,"item-id":72,"rank":12,"title":"Women","item-type":"section","section-slug":"women","id":25,"created-at":1439446504772,"section-name":"Women","data":{"color":"#f12b5b"}},{"updated-at":1454313134990,"tag-name":null,"publisher-id":1,"item-id":12,"rank":13,"title":"Politics","item-type":"section","section-slug":"politics","id":2,"created-at":1437549738996,"section-name":"Politics","data":{"color":"#C24CD1"}},{"updated-at":1454313136983,"tag-name":null,"publisher-id":1,"item-id":5,"rank":14,"title":"India","item-type":"section","section-slug":"india","id":1,"created-at":1437549738996,"section-name":"India","data":{"color":"#AA1E50"}},{"updated-at":1454313139340,"tag-name":null,"publisher-id":1,"item-id":62,"rank":15,"title":"Hot
+        Wire","item-type":"section","section-slug":"hot-wire","id":14,"created-at":1437549738996,"section-name":"Hot
+        Wire","data":{"color":"#F42558"}},{"updated-at":1454313141023,"tag-name":null,"publisher-id":1,"item-id":54,"rank":16,"title":"DeQoded","item-type":"section","section-slug":"deqoded","id":11,"created-at":1437549738996,"section-name":"DeQoded","data":{"color":"#7d00b3"}},{"updated-at":1454313143103,"tag-name":null,"publisher-id":1,"item-id":17,"rank":25,"title":"World","item-type":"section","section-slug":"world","id":3,"created-at":1437549738996,"section-name":"World","data":{"color":"#00BEC8"}},{"updated-at":1454313145973,"tag-name":null,"publisher-id":1,"item-id":2,"rank":36,"title":"Business","item-type":"section","section-slug":"business","id":4,"created-at":1437549738996,"section-name":"Business","data":{"color":"#FFC100"}},{"updated-at":1454313147705,"tag-name":null,"publisher-id":1,"item-id":6,"rank":45,"title":"Life","item-type":"section","section-slug":"life","id":9,"created-at":1437549738996,"section-name":"Life","data":{"color":"#F00064"}},{"updated-at":1454313149898,"tag-name":null,"publisher-id":1,"item-id":9,"rank":66,"title":"Photos","item-type":"section","section-slug":"photos","id":15,"created-at":1437549738996,"section-name":"Photos","data":{"color":"#FF6464"}},{"updated-at":1454313152779,"tag-name":null,"publisher-id":1,"item-id":16,"rank":67,"title":"WaterQooler","item-type":"section","section-slug":"waterqooler","id":10,"created-at":1437549738996,"section-name":"WaterQooler","data":{"color":"#ECC7F0"}},{"updated-at":1454313155367,"tag-name":null,"publisher-id":1,"item-id":97,"rank":68,"title":"TorQue","item-type":"section","section-slug":"torque","id":36,"created-at":1440994990137,"section-name":"TorQue","data":{"color":"#0f3250","link":""}},{"updated-at":1454313155368,"tag-name":null,"publisher-id":1,"item-id":232,"rank":69,"title":"Pathankot
+        Attack","item-type":"section","section-slug":"pathankot-attack","id":125,"created-at":1452499064741,"section-name":"Pathankot
+        Attack","data":{"color":"#FF4000"}},{"updated-at":1454306054893,"tag-name":null,"publisher-id":1,"item-id":147,"rank":74,"title":"Wine
+        & Dine","item-type":"section","section-slug":"wine-dine","id":66,"created-at":1444893223946,"section-name":"Wine
+        & Dine","data":{"color":"#ffaf00"}},{"updated-at":1454306053148,"tag-name":null,"publisher-id":1,"item-id":144,"rank":102,"title":"Love
+        & Sex","item-type":"section","section-slug":"love-sex","id":143,"created-at":1454295699150,"section-name":"Love
+        & Sex","data":{"color":"#990776"}},{"updated-at":1454306050967,"tag-name":null,"publisher-id":1,"item-id":146,"rank":122,"title":"LGBTQ","item-type":"section","section-slug":"lgbtq","id":74,"created-at":1446434939538,"section-name":"LGBTQ","data":{"color":"#DB145A"}},{"updated-at":1454306049234,"tag-name":null,"publisher-id":1,"item-id":64,"rank":125,"title":"Blogs","item-type":"section","section-slug":"blogs","id":13,"created-at":1437549738996,"section-name":"Blogs","data":{"color":"#555555"}},{"updated-at":1454306047626,"tag-name":null,"publisher-id":1,"item-id":143,"rank":135,"title":"InfographiQ","item-type":"section","section-slug":"infographiq","id":67,"created-at":1445241653622,"section-name":"InfoGraphiQ","data":{"color":"#0080FF"}},{"updated-at":1454306045960,"tag-name":null,"publisher-id":1,"item-id":null,"rank":143,"title":"Subscribe
+        to Newsletter ","item-type":"link","section-slug":null,"id":68,"created-at":1445312747650,"section-name":null,"data":{"color":"#444444","link":"http://eepurl.com/bo_kl9"}},{"updated-at":1454306043996,"tag-name":null,"publisher-id":1,"item-id":null,"rank":144,"title":"Download
+        Android App","item-type":"link","section-slug":null,"id":69,"created-at":1445312988314,"section-name":null,"data":{"color":"#444444","link":"https://play.google.com/store/apps/details?id=com.thequint.mobile.android&hl=en"}}],"stacks":[{"show-on-locations":[null,null,null,null,null,null,null,null],"background-color":"#F12B5B","rank":1,"type":"stack","story-group":"stack-5","deleted-at":null,"max-stories":"5","id":5,"show-on-all-sections?":true,"heading":"Hot
+        Wire"},{"show-on-locations":["Home"],"background-color":"#FFC100","rank":2,"type":"stack","story-group":"featured","deleted-at":null,"max-stories":5,"id":3,"show-on-all-sections?":true,"heading":"QuintEssential"},{"show-on-locations":["Home","InfoGraphiQ","Women","Business","Hot
+        Wire","Blogs","TorQue","Bihar Elections","Love & Sex","LGBTQ","World","India","Health
+        & Fitness","QReview","Wine & Dine","WaterQooler","Photos","Life","Opinion","Politics","Technology","Entertainment","Videos","DeQoded"],"background-color":"#7D00B3","rank":3,"type":"stack","story-group":"trending","deleted-at":null,"max-stories":5,"id":1,"show-on-all-sections?":true,"heading":"Trending"},{"show-on-locations":[null],"background-color":"#00c5c5","rank":4,"type":"stack","story-group":"stack-11","deleted-at":null,"max-stories":5,"id":11,"show-on-all-sections?":true,"heading":"Videos"},{"show-on-locations":[],"background-color":"#DF01A5","rank":5,"type":"stack","story-group":"stack-42","deleted-at":null,"max-stories":5,"id":42,"show-on-all-sections?":false,"heading":"#MyLoveStory"}]},"cdn-name":"http://d9zv4zsfqrm9s.cloudfront.net/","num-headlines":5,"env":"dev","initial-stories-per-page":40,"typekit-id":"fxm3vbg","cdn-image":"qt-staging-01.imgix.net","story-slug-format":"{{section}}/{{first-published-at|YYYY/MM/dd}}","android":{"notification-style":"roll-up"},"airbrake":{"projectId":null,"apiKey":null},"shrubbery-host":"http://analytics.lvh.me:5001","nudge-host":"http://localhost:8001","num-more-stories":20,"razorpay-gateway-key":null,"story-attributes":[],"mins-between-refreshes":25}'
+    http_version: 
+  recorded_at: Wed, 09 Mar 2016 09:42:13 GMT
+recorded_with: VCR 3.0.1
