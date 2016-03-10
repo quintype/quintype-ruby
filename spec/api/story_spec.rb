@@ -16,6 +16,13 @@ describe API::Story do
     end
   end
 
+  describe '#all_video_stories', :vcr => { cassette_name: "api_stories_video" } do
+    it 'gives all video stories' do
+      stories = described_class.all_video_stories
+      expect(stories.count).to eq 12
+    end
+  end
+
   describe '#find_by_stacks'  do
     it 'gives stories for stacks' , :vcr => { cassette_name: "api_story_find_by_stacks" } do
       config = API.config

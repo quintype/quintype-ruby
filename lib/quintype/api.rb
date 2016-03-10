@@ -2,9 +2,14 @@ require 'faraday'
 require 'json'
 require 'active_support/all'
 
+# Modules for models
+require_relative './api/story/reading_time'
+
+# API models
 require_relative './api/story'
 require_relative './api/stack'
 require_relative './api/url'
+
 
 class API
   class << self

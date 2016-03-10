@@ -1,5 +1,3 @@
-require_relative './story/reading_time'
-
 class API
   class Story
     attr_reader :story
@@ -31,14 +29,9 @@ class API
         end
       end
 
-      def find_by_stacks(stacks, options={})
-        if stacks.present?
-          stacks.inject({}) do |hash, stack|
-            stories = find({ 'story-group' => stack['story_group']}.merge(options)) || []
-            hash[stack['story_group']] = stories
-            hash
-          end
-        end
+      def all_video_stories
+        stories = API.videos
+        wrap_all(stories['stories'])
       end
 
       def all

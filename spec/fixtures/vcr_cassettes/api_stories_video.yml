@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8001/api/stories-by-template?fields=hero-image-s3-key,hero-image-metadata,hero-image-caption,headline,slug&limit=12&template=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 10 Mar 2016 07:32:26 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Jetty(9.2.10.v20150310)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"stories":[{"hero-image-s3-key":"thequint/2016-02/dc8ceb0b-5672-4989-bfc4-737b3b7ab59e/BMW-X1.jpg","hero-image-metadata":{"width":2000,"height":1126,"mime-type":"image/jpeg","focus-point":[885,643]},"hero-image-caption":"BMW
+        X1 M Sport badge. (Photo: <b>The Quint</b>)","headline":"First Look: BMW X1
+        M Sport at the Delhi Auto Expo 2016","slug":"delhi-auto-expo-2016/2016/02/15/first-look-bmw-x1-m-sport-at-the-delhi-auto-expo-2016"},{"hero-image-s3-key":"thequint/2016-02/dfa584ef-62fb-4836-b974-2cfaaf6012f7/PANADA
+        2.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[888,533]},"hero-image-caption":"Three
+        adorable dogs have become an online hit, thanks to their unusual panda-like
+        markings. (Photo: AP screengrab)","headline":"Dogs or Pandas? Watch this Video
+        to Find Out What\u2019s in There","slug":"videos/2016/02/15/dogs-or-pandas-watch-this-video-to-find-out-whats-in-there"},{"hero-image-s3-key":"thequint/2016-02/0498fffe-dc86-4def-97ca-f829f13b9823/us.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg","focus-point":[475,245]},"hero-image-caption":"(Photo:
+        AP)","headline":"Watch Out for The Quint\u2019s US Presidential Elections
+        Coverage","slug":"videos/2016/02/15/watch-out-for-the-quints-us-presidential-elections-coverage"},{"hero-image-s3-key":"thequint/2016-02/0b0f366c-a683-4340-9cce-9a8f11ec8d47/fire.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg","focus-point":[483,284]},"hero-image-caption":"(Photo:
+        AP)","headline":"Fire Engulfs the Stage During Make in India Event, Probe
+        Ordered","slug":"videos/2016/02/15/fire-engulfs-the-stage-during-make-in-india-event-probe-ordered"},{"hero-image-s3-key":"thequint/2016-02/dc3a559c-fa96-409e-b903-6fa1267fc835/HERO-Kjeru.jpg","hero-image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg","focus-point":[1101,345]},"hero-image-caption":"Mrs
+        Parminder Chadha has a love filled message for Arvind Kejriwal. Can he handle
+        the wit? (Photo: The Quint)","headline":"Kejriwal Ji, Here\u2019s an Open
+        Love Letter on Your Govt\u2019s Anniversary","slug":"waterqooler/2016/02/13/kejriwal-ji-heres-an-open-love-letter-for-your-govts-anniversary"},{"hero-image-s3-key":"thequint/2016-02/406fe2c9-7891-49bb-a7f4-2a8f5479de7a/obama.00_04_00_09.Still002.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[934,428]},"hero-image-caption":"(Photo:
+        Reuters/Treated by The Quint)","headline":"Obama & Michelle Wish Each Other
+        Happy Valentine\u2019s Day on \u2018Ellen''","slug":"videos/2016/02/13/obama-and-michelle-wish-each-other-happy-valentines-day-on-ellen"},{"hero-image-s3-key":"thequint/2016-02/4ea29a03-a24f-4d84-b7e4-460d7536073e/Raza
+        Hero Image.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[983,390]},"hero-image-caption":"Raza
+        Murad tells the story of how he met and fell in love with his wife Samina
+        Murad (Photo: The Quint)","headline":"#MyLoveStory: Raza Murad Tells an  Emotional
+        Tale of Finding Love","slug":"videos/2016/02/12/raza-and-samina-murads-love-story-will-make-you-go-awww"},{"hero-image-s3-key":"thequint/2016-02/172d73a7-324f-41fa-b1b6-80fa0c5106c0/Matru-Pitru
+        (1) (1).JPG","hero-image-metadata":{"width":2475,"height":1392,"mime-type":"image/jpeg","focus-point":[1302,666]},"hero-image-caption":"Valentine\u2019s
+        Day VS. Matru- Pitru Diwas. (Photo: <b>The Quint</b>)","headline":"Valentine\u2019s
+        Day or Matru-Pitru Diwas: What Does Delhi Want?","slug":"videos/2016/02/13/valentines-day-or-matru-pitru-diwas-what-does-delhi-want"},{"hero-image-s3-key":"thequint/2016-02/08c237fd-f9c4-491a-a5c5-ce8a08bd1262/13021-pti2_13_2016_000271b.jpg","hero-image-metadata":{"width":2201,"height":1380,"mime-type":"image/jpeg"},"hero-image-caption":"
+        Rahul Gandhi and many left leaders went to the JNU campus to meet students
+        demanding the release of Student Union president Kanhaiya Kumar. (Photo: PTI)","headline":"\u2018Don\u2019t
+        Let Bullies Push You Around\u2019: Rahul Gandhi to JNU Students","slug":"videos/2016/02/13/dont-let-bullies-push-you-around-rahul-gandhi-to-jnu-students"},{"hero-image-s3-key":"thequint/2016-02/c9d51282-c775-4490-8575-da798ccf788f/modi-hero.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg"},"hero-image-caption":"PM
+        Narendra Modi at the Make in India week launch. (Photo: PTI)","headline":"\u2018Make
+        in India\u2019 Has Become India\u2019s Biggest Brand: Narendra Modi","slug":"videos/2016/02/13/make-in-india-has-become-indias-biggest-brand-narendra-modi"},{"hero-image-s3-key":"thequint/2016-02/e69865f7-cc61-4a79-a70a-c98d74b6d145/JNU-HERO-FINAL.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg"},"hero-image-caption":"(Photo:
+        Reuters)","headline":"Don\u2019t Use JNU Campus for Anti-National Activities:
+        Ex-Servicemen \u00A0","slug":"videos/2016/02/13/dont-use-jnu-campus-for-anti-national-activities-ex-servicemen"},{"hero-image-s3-key":"thequint/2016-02/6e3ff1aa-2286-48f3-a2fe-ba46f2dbc425/villain
+        (1).jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg"},"hero-image-caption":"Raza
+        Murad tells <b><i>The Quint</i></b> why a love story is not a story worth
+        telling, if it doesn\u2019t have a villain.","headline":"Only  a Villain Can
+        Add Some Real Tadka to a Story: Raza Murad","slug":"entertainment/2016/02/13/only-a-villain-can-add-some-real-tadka-to-a-story-raza-murad"}]}'
+    http_version: 
+  recorded_at: Thu, 10 Mar 2016 07:32:26 GMT
+recorded_with: VCR 3.0.1
