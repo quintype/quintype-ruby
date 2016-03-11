@@ -1,3 +1,5 @@
+require_relative './story/reading_time'
+
 class API
   class Story
     attr_reader :story
@@ -11,7 +13,7 @@ class API
       end
 
       def wrap(story)
-        Story.new(story) if story
+        new(story) if story
       end
 
       def find(params, opts={})
@@ -45,7 +47,7 @@ class API
     end
 
     def cards
-      @cards = story['cards']
+      @cards = story['cards'] || []
     end
 
     def serializable_hash(config={})
