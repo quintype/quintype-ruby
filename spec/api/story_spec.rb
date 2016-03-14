@@ -4,7 +4,7 @@ describe API::Story do
   describe '#find' , :vcr => { cassette_name: "api_story_find" } do
     it 'finds the stories for the required params' do
       story = described_class.find({limit: 1})
-      expect(story.to_h["headline"]).to eq 'JNU Row Live: Lawyers Physically Assault Students, Media'
+      expect(story.to_h).to_not be_empty
     end
   end
 
@@ -12,7 +12,6 @@ describe API::Story do
     it 'finds the stories for the required params' do
       stories = described_class.where({limit: 1})
       expect(stories.count).to eq 1
-      expect(stories.first.to_h["headline"]).to eq 'JNU Row Live: Lawyers Physically Assault Students, Media'
     end
   end
 
@@ -32,18 +31,22 @@ describe API::Story do
 
   describe '#find_by_slug', :vcr => { cassette_name: "api_stories_find_by_slug" } do
     it 'finds story for slug' do
-      story = described_class.find_by_slug('jnu-row-amit-shah-asks-rahul-gandhi-if-he-wants-another-partition')
-      expect(story.to_h['headline']).to eq 'JNU Row: Amit Shah Asks Rahul Gandhi If He Wants Another Partition'
+      test_story = described_class.where({limit: 1})
+      slug = test_story[0].to_h['slug']
+      story = described_class.find_by_slug(slug)
+      expect(story.to_h['slug']).to eq slug
     end
   end
 
   describe '#find_by_stacks'  do
     it 'gives stories for stacks' , :vcr => { cassette_name: "api_story_find_by_stacks" } do
       config = API.config
-      stories = described_class.find_by_stacks(config['stacks'])
-      expect(stories.keys).to eq(["stack-5", "featured", "trending", "stack-11", "stack-42"])
-      expect(stories["stack-5"].count).to eq 5
-      expect(stories["trending"].count).to eq 5
+      stacks_stories = described_class.find_by_stacks(config['stacks'])
+      stack_names = config['stacks'].map { |s| s['story_group'] }
+      expect(stacks_stories.keys).to eq(stack_names)
+      stacks_stories.each_pair do |story_group, stories|
+        expect(stories.count).to be > 0
+      end
     end
 
     it 'gives stories for stacks for a params passed', :vcr => { cassette_name: "api_story_find_by_stacks_and_sections" } do
