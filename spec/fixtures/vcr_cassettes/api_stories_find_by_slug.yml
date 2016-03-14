@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8001/api/stories-by-slug?slug=jnu-row-amit-shah-asks-rahul-gandhi-if-he-wants-another-partition
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Mar 2016 05:23:38 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Jetty(9.2.10.v20150310)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"story":{"updated-at":1455523071250,"assignee-id":13431,"author-name":"The
+        Quint","tags":[{"id":229,"name":"Amit Shah"},{"id":382,"name":"Rahul Gandhi"},{"id":34205,"name":"Kanhaiya
+        Kumar"},{"id":34384,"name":"JNU Row"}],"headline":"JNU Row: Amit Shah Asks
+        Rahul Gandhi If He Wants Another Partition","storyline-id":null,"votes":{},"story-content-id":"12661a1a-0a24-4ef6-8205-b4de60db7969","slug":"politics/2016/02/15/jnu-row-amit-shah-asks-rahul-gandhi-if-he-wants-another-partition","last-published-at":1455503273266,"sections":[{"id":12,"name":"Politics"},{"id":5,"name":"India"}],"content-created-at":1455500455113,"owner-name":"Inayat
+        Ramdas","custom-slug":null,"push-notification":null,"publisher-id":1,"author-slug":"the-quint","hero-image-metadata":{"width":1819,"height":1024,"mime-type":"image/jpeg","focus-point":[837,314]},"comments":null,"published-at":1455523073265,"storyline-title":null,"summary":"Amit
+        Shah accuses Rahul Gandhi and the Congress of anti-national sentiments in
+        the support for JNU students.","autotags":[],"status":"published","bullet-type":"123","id":"12661a1a-0a24-4ef6-8205-b4de60db7969","hero-image-s3-key":"thequint/2016-02/60016f53-1bf2-4057-9006-4e2899e52c9b/amit-shah-AP.jpg","cards":[{"story-elements":[{"description":"","page-url":"/story/12661a1a-0a24-4ef6-8205-b4de60db7969/element/3cf2dd11-2d5f-45f0-9276-e2dc85dcca5f","type":"text","family-id":"d9e055c9-d3e3-45b2-b3e7-eae08264c2f3","title":"","id":"3cf2dd11-2d5f-45f0-9276-e2dc85dcca5f","metadata":{},"subtype":null,"text":"<p>BJP
+        president Amit Shah has lashed out at Rahul Gandhi, accusing him and the Congress
+        of supporting anti-nationalist elements amid the JNU row.</p><p>In a blog
+        post on Monday, Shah asked the Congress what its definition of patriotism
+        is, accusing it of not being able to differentiate between nationalism and
+        anti-state. </p>"},{"description":"","page-url":"/story/12661a1a-0a24-4ef6-8205-b4de60db7969/element/ca788af6-4a72-4324-928a-4ff4d7507b4b","type":"text","family-id":"a6af0e07-48fc-4ff6-bc9b-a9bff6ae0623","title":"","id":"ca788af6-4a72-4324-928a-4ff4d7507b4b","metadata":{"content":"What
+        happened in JNU cannot be termed pro-nationalist. Anti-national slogans raised
+        in university cannot be acceptable to Indians...Has Rahul Gandhi lent his
+        voice to separatists in the country? Does he want another partition of the
+        country. Would it have been right for government not to have acted against
+        anti-national elements? Are you supporting anti-nationalism?","attribution":"<b><a
+        href=\"http://base.amitshah.co.in/2016/02/15/%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AF%E0%A4%B9%E0%A5%80-%E0%A4%B9%E0%A5%88-%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B8-%E0%A4%95%E0%A5%80-%E0%A4%B0%E0%A4%BE/\">Amit
+        Shah\u2019s blog post</a></b>"},"subtype":"blockquote","text":"<div><blockquote>What
+        happened in JNU cannot be termed pro-nationalist. Anti-national slogans raised
+        in university cannot be acceptable to Indians...Has Rahul Gandhi lent his
+        voice to separatists in the country? Does he want another partition of the
+        country. Would it have been right for government not to have acted against
+        anti-national elements? Are you supporting anti-nationalism?</blockquote><span
+        class=\"attribution\"><b><a href=\"http://base.amitshah.co.in/2016/02/15/%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AF%E0%A4%B9%E0%A5%80-%E0%A4%B9%E0%A5%88-%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B8-%E0%A4%95%E0%A5%80-%E0%A4%B0%E0%A4%BE/\">Amit
+        Shah\u2019s blog post</a></b></span></div>"},{"description":"","page-url":"/story/12661a1a-0a24-4ef6-8205-b4de60db7969/element/0f2074ec-3cae-4315-94b3-b08de0ed5156","type":"text","family-id":"157a87be-84dc-4243-a01d-420b6d53fd5d","title":"","id":"0f2074ec-3cae-4315-94b3-b08de0ed5156","metadata":{},"subtype":null,"text":"<p>Gandhi
+        has <a href=\"http://www.thequint.com/videos/2016/02/13/dont-let-bullies-push-you-around-rahul-gandhi-to-jnu-students\">openly
+        lent support </a>to the students in Jawaharlal Nehru University (JNU) who
+        have been accused of praising 2001 parliament attack convict Afzal Guru. </p><p>Gandhi
+        and colleagues supporting the JNU students has proved that national interest
+        is not in their agenda, Shah wrote. </p><p>JNU students have gone on protest
+        after their students\u2019 union president Kanhaiya Kumar was arrested on
+        sedition charges on 11 February. </p><p>Read Amit Shah\u2019s <a href=\"http://base.amitshah.co.in/2016/02/15/%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AF%E0%A4%B9%E0%A5%80-%E0%A4%B9%E0%A5%88-%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B8-%E0%A4%95%E0%A5%80-%E0%A4%B0%E0%A4%BE/\">blog
+        post</a>.</p><p><b>Also read:</b><a href=\"http://www.thequint.com/hot-wire/2016/02/13/jnu-afzal-row-political-parties-enter-the-fray-slam-each-other\n\"><b>
+        </b>JNU-Afzal Row: Political Parties Enter the Fray, Slam Each Other</a></p>"}],"card-updated-at":1455523053358,"content-version-id":"b0dfc8d5-e0f1-4e79-9c1d-f84ede6d8e7f","card-added-at":1455520310438,"status":"draft","id":"60c9360c-e9cf-4e94-8daa-b13c3b2a2554","content-id":"60c9360c-e9cf-4e94-8daa-b13c3b2a2554","version":22}],"story-version-id":"c4edc775-7732-4bf9-897b-dc870d124b34","content-updated-at":1455503273651,"author-id":31,"owner-id":13431,"access":null,"first-published-at":1455503273266,"hero-image-caption":"\n\nBJP
+        president Amit Shah. (Photo: IANS)","version":85,"story-template":null,"created-at":1455523053336,"authors":[{"updated-at":1446033586826,"email":"teamquint@thequint.com","slug":"the-quint","last-name":null,"publisher-id":1,"name":"The
+        Quint","avatar-url":null,"first-name":null,"id":31,"created-at":1446033586826}],"metadata":{},"publish-at":null,"assignee-name":"Inayat
+        Ramdas"}}'
+    http_version: 
+  recorded_at: Mon, 14 Mar 2016 05:23:38 GMT
+recorded_with: VCR 3.0.1

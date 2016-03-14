@@ -16,18 +16,31 @@ class API
         new(story) if story
       end
 
-      def find(params, opts={})
+      def where(params, opts={})
         stories = API.stories(params, opts)
         wrap_all(stories)
+      end
+
+      def find(params, opts={})
+        if stories = API.stories(params, opts).presence
+          story = stories.first
+          wrap(story)
+        end
       end
 
       def find_by_stacks(stacks, options={})
         if stacks.present?
           stacks.inject({}) do |hash, stack|
-            stories = find({ 'story-group' => stack['story_group']}.merge(options)) || []
+            stories = where({ 'story-group' => stack['story_group']}.merge(options)) || []
             hash[stack['story_group']] = stories
             hash
           end
+        end
+      end
+
+      def find_by_slug(slug)
+        if story = API.story_by_slug(slug).presence
+          wrap(story['story'])
         end
       end
 
