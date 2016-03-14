@@ -2,7 +2,7 @@ class API
   class Stack
     class << self
       def all
-        API.config['layout']['stacks']
+        API.config['stacks']
       end
 
       def with_stories(params={}, config={})

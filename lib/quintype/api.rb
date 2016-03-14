@@ -28,7 +28,7 @@ class API
     end
 
     def config
-      _get("config")
+      _get("config/frontend")
     end
 
     def story(story_id)
