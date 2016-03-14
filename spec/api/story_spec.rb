@@ -4,7 +4,7 @@ describe API::Story do
   describe '#find' , :vcr => { cassette_name: "api_story_find" } do
     it 'finds the stories for the required params' do
       story = described_class.find({limit: 1})
-      expect(story.serializable_hash["headline"]).to eq 'JNU Row Live: Lawyers Physically Assault Students, Media'
+      expect(story.to_h["headline"]).to eq 'JNU Row Live: Lawyers Physically Assault Students, Media'
     end
   end
 
@@ -12,7 +12,7 @@ describe API::Story do
     it 'finds the stories for the required params' do
       stories = described_class.where({limit: 1})
       expect(stories.count).to eq 1
-      expect(stories.first.serializable_hash["headline"]).to eq 'JNU Row Live: Lawyers Physically Assault Students, Media'
+      expect(stories.first.to_h["headline"]).to eq 'JNU Row Live: Lawyers Physically Assault Students, Media'
     end
   end
 
@@ -33,7 +33,7 @@ describe API::Story do
   describe '#find_by_slug', :vcr => { cassette_name: "api_stories_find_by_slug" } do
     it 'finds story for slug' do
       story = described_class.find_by_slug('jnu-row-amit-shah-asks-rahul-gandhi-if-he-wants-another-partition')
-      expect(story.serializable_hash['headline']).to eq 'JNU Row: Amit Shah Asks Rahul Gandhi If He Wants Another Partition'
+      expect(story.to_h['headline']).to eq 'JNU Row: Amit Shah Asks Rahul Gandhi If He Wants Another Partition'
     end
   end
 
@@ -65,17 +65,17 @@ describe API::Story do
     end
   end
 
-  describe '#serializable_hash' do
+  describe '#to_h' do
     it 'serializes stories' , :vcr => { cassette_name: "api_story_find" } do
       stories = described_class.where({limit: 1})
-      expect(stories.first.serializable_hash.keys).to include("url", "headline", "tags", "sections", "time_in_minutes")
+      expect(stories.first.to_h.keys).to include("url", "headline", "tags", "sections", "time_in_minutes")
     end
 
     it 'serializes stories based on config', :vcr => { cassette_name: "api_story_find_config" } do
       config = API.config
       stories = described_class.where({limit: 1})
       story = stories.first.story
-      serialized_story = stories.first.serializable_hash(config)
+      serialized_story = stories.first.to_h(config)
 
       expect(story['sections'].first.keys).to_not include("display_name")
       expect(story['sections'].first).to eq({"id"=>5, "name"=>"India"})

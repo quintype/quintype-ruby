@@ -63,7 +63,7 @@ class API
       @cards = story['cards'] || []
     end
 
-    def serializable_hash(config={})
+    def to_h(config={})
       hash = {
         'url' => add_url,
         'time_in_minutes' => time_in_minutes

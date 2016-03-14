@@ -10,7 +10,7 @@ class API
         stacks = all.map do |stack|
           stories = stories_with_stacks[stack['story_group']]
           if config.present?
-            stories = stories.map {|story| story.serializable_hash(config) }
+            stories = stories.map {|story| story.to_h(config) }
           end
           stack['stories'] = stories
           stack
