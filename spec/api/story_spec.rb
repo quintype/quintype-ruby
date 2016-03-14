@@ -51,11 +51,12 @@ describe API::Story do
 
     it 'gives stories for stacks for a params passed', :vcr => { cassette_name: "api_story_find_by_stacks_and_sections" } do
       config = API.config
-      stories = described_class.find_by_stacks(config['stacks'], {'section' => 'India'})
-      expect(stories.count).to eq 5
-      expect(stories.keys).to eq(["stack-5", "featured", "trending", "stack-11", "stack-42"])
-      expect(stories["stack-5"].count).to eq 5
-      expect(stories["trending"].count).to eq 5
+      stacks_stories = described_class.find_by_stacks(config['stacks'], {'section' => 'India'})
+      stack_names = config['stacks'].map { |s| s['story_group'] }
+      expect(stacks_stories.keys).to eq(stack_names)
+      stacks_stories.each_pair do |story_group, stories|
+        expect(stories.count).to be > 0
+      end
     end
   end
 
@@ -64,7 +65,7 @@ describe API::Story do
       stories = described_class.where({limit: 1})
       story = stories.first
 
-      expect(story.time_in_minutes).to eq 6
+      expect(story.time_in_minutes).to eq 2
     end
   end
 
