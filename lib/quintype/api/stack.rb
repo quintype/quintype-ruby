@@ -4,7 +4,7 @@ class API
       def all
         API.config['stacks']
       end
-
+      #TODO filter by stacks
       def with_stories(params={}, config={})
         stories_with_stacks = API::Story.find_by_stacks(all, params)
         stacks = all.map do |stack|
