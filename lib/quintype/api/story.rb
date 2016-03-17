@@ -89,8 +89,12 @@ class API
     end
 
     def add_urls_to_tags
-      tags = story['tags'].map do |tag|
-        tag.merge('url' => URL.topic(tag['name']))
+      if story['tags'].present?
+        tags = story['tags'].map do |tag|
+          tag.merge('url' => URL.topic(tag['name']))
+        end
+      else
+        story['tags']
       end
     end
 
