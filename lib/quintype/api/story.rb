@@ -64,10 +64,11 @@ class API
     end
 
     def to_h(config={})
-      hash = {
+      hash = story.merge({
         'url' => add_url,
-        'time_in_minutes' => time_in_minutes
-      }.merge(story)
+        'time_in_minutes' => time_in_minutes,
+        'tags' => add_urls_to_tags
+      })
       if config.present?
         hash.merge!({ 'sections' => add_display_names_to_sections(config) })
       end
@@ -84,6 +85,12 @@ class API
         display_name = display_section['display_name'] || display_section['name'] || section['name']
 
         section.merge({ 'display_name' => display_name })
+      end
+    end
+
+    def add_urls_to_tags
+      tags = story['tags'].map do |tag|
+        tag.merge('url' => URL.topic(tag['name']))
       end
     end
 

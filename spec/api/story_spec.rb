@@ -85,7 +85,9 @@ describe API::Story do
       expect(story['sections'].first).to eq({"id"=>5, "name"=>"India"})
       expect(serialized_story.keys).to include("url", "headline", "tags", "sections", "time_in_minutes")
       expect(serialized_story['sections'].first.keys).to include("display_name")
+      expect(serialized_story['tags'].first.keys).to include("url")
       expect(serialized_story['sections'].first).to eq({"id"=>5, "name"=>"India", "display_name"=>"India"})
+      expect(serialized_story['tags'].first).to eq({"id"=>26721, "name"=>"Rohith Vemula", "url"=>"/topic/Rohith%20Vemula"})
     end
   end
 end
