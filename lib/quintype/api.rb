@@ -82,10 +82,10 @@ class API
       _get("story-collection/find-by-tag", options)
     end
 
-    def post_comment(parent_comment_id, story_content_id, text)
+    def post_comment(parent_comment_id, member_id, story_content_id, text)
       _post("comment", {
               "parent-comment-id" => parent_comment_id,
-              "member-id"         => global.sketches.member_id(),
+              "member-id"         => member_id,
               "story-content-id"  => story_content_id,
               "text"              => text
             })
