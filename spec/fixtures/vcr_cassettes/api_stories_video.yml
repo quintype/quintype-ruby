@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Mar 2016 07:25:50 GMT
+      - Thu, 24 Mar 2016 11:56:20 GMT
       Access-Control-Allow-Origin:
       - "*"
       Content-Type:
@@ -29,49 +29,41 @@ http_interactions:
       Server:
       - Jetty(9.2.10.v20150310)
     body:
-      encoding: ASCII-8BIT
-      string: '{"stories":[{"hero-image-s3-key":"thequint/2016-01/d47a2b03-04a8-422b-88a0-568fba8640a1/2801-Bellary-Karnatka.00_00_44_11.Still001.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[806,634]},"hero-image-caption":"Labour
-        Minister PT Parameshwara Naik boasted about his role in the abrupt transfer
-        of a senior woman police official. (Photo: ANI)","headline":"Viral Video:
-        Congress Minister Brags About Transferring Woman SP","slug":"videos/2016/01/28/viral-video-congress-minister-brags-about-transferring-woman-sp"},{"hero-image-s3-key":"thequint/2016-01/cd5bdc1f-f4b4-4450-9a4c-845aa9e1ea65/Ashwin-456.png","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/png","focus-point":[490,244]},"hero-image-caption":"R
-        Ashwin attends a press conference ahead of the second T20 between India and
-        Australia at Melbourne. (Photo: ANI)","headline":"Virat Kohli Always Leads
-        From the Front: R Ashwin","slug":"sports/2016/01/28/virat-kohli-always-leads-from-the-front-r-ashwin"},{"hero-image-s3-key":"thequint/2016-01/4b18d392-3201-428c-99f8-8c119cc76f0b/MCD.jpeg","hero-image-metadata":{"width":672,"height":378,"mime-type":"image/jpeg","focus-point":[346,243]},"hero-image-caption":"MCD
-        workers stage a demonstration to press for release of their pending salaries
-        in New Delhi. (Photo: IANS)","headline":"MCD Workers on Strike, Garbage Piles
-        up Outside Sisodia\u2019s House","slug":"videos/2016/01/28/mcd-workers-on-strike-garbage-piles-up-outside-sisodias-house"},{"hero-image-s3-key":"thequint/2016-01/124e00f8-3ffb-415b-bac3-651ecb4d1a9b/Screen
-        Shot 2016-01-27 at 19.00.47.png","hero-image-metadata":{"width":1092,"height":614,"mime-type":"image/png","focus-point":[518,287]},"hero-image-caption":"112-year-old
-        Batuli Lamichhane has credited her longevity to chain-smoking! She claims
-        that she has been smoking at least 30 cigarettes a day for the past 95 YEARS!","headline":"112-Year-Old
-        Woman Claims Smoking is the Reason for Her Longevity","slug":"videos/2016/01/28/112-year-old-woman-claims-smoking-is-the-reason-for-her-longevity"},{"hero-image-s3-key":"thequint/2016-01/c4c57450-3cd1-4218-8e52-dc2d44915ccd/Screen
-        Shot 2016-01-28 at 11.15.26.png","hero-image-metadata":{"width":941,"height":530,"mime-type":"image/png","focus-point":[504,261]},"hero-image-caption":"MAD
-        Foundation plans to mobilise 500 volunteers to colour 30 staircases at the
-        Borivali and Khar railway stations. (Photo: ANI screengrab)","headline":"\u2018Making
-        a Difference\u2019 by Beautifying Mumbai\u2019s Railway Stations","slug":"videos/2016/01/28/making-a-difference-by-beautifying-mumbais-railway-stations"},{"hero-image-s3-key":"thequint/2016-01/9798f17a-79c7-416e-87ff-d40ea5a60db9/Screen
-        Shot 2016-01-28 at 11.21.29.png","hero-image-metadata":{"width":907,"height":548,"mime-type":"image/png","focus-point":[440,287]},"hero-image-caption":"Visakhapatnam
-        is getting ready to host International Fleet Review 2016 in the first week
-        of February. (Photo: ANI screengrab)","headline":"Port City Gears up for International
-        Fleet Review in February","slug":"videos/2016/01/28/port-city-gears-up-for-international-fleet-review-in-february"},{"hero-image-s3-key":"thequint/2016-01/b16a511d-dacd-456e-9f94-9860b65dae7c/hyd
-        hero.jpg","hero-image-metadata":{"width":1280,"height":720,"mime-type":"image/jpeg","focus-point":[633,296]},"hero-image-caption":"Hyderabad
-        University students staging a protest on Wednesday against Dalit scholar Rohith
-        Vemula\u2019s suicide. (Photo: ANI screengrab)","headline":"Rohith Vemula
-        Suicide: HCU Students Stage Unique Protest","slug":"videos/2016/01/27/rohith-vemula-suicide-hcu-students-stage-unique-protest"},{"hero-image-s3-key":"thequint/2016-01/aa6717ad-175a-4a57-b435-b60a47697931/ARUNACHAL
-        HERO.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[911,447]},"hero-image-caption":"The
-        youth of Arunachal Pradesh express their views about the President\u2019s
-        Rule imposed in their state. (Photo: altered by <b>The Quint</b>)","headline":"President\u2019s
-        Rule Good or Bad?  Youth of Arunachal Pradesh Speak Up","slug":"videos/2016/01/27/presidents-rule-good-or-bad-youth-of-arunachal-pradesh-speak-up"},{"hero-image-s3-key":"thequint/2016-01/8a5d093e-748f-4b22-a7e8-aac56c391ff3/Untitled
-        design (26).jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[1234,556]},"hero-image-caption":"A
-        Sikh protester was forced to leave from Donald Trump\u2019s rally on 24 January.
-        (Photo: Reuters)","headline":"As #TrumpInsultsSikh Trends, This is What People
-        Really Think","slug":"videos/2016/01/27/as-trumpinsultssikh-trends-this-is-what-people-really-think"},{"hero-image-s3-key":"thequint/2016-01/a35538c9-be31-4145-8df4-d96cc21f2252/arunachal-hero.jpg","hero-image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg","focus-point":[957,561]},"hero-image-caption":"QWrap:
-        27.01.16","headline":"QWrap: Arunachal Crisis, Manipur Fake Encounter, Mahindra
-        KUV100","slug":"videos/2016/01/27/qwrap-arunachal-crisis-manipur-fake-encounter-mahindra-kuv100"},{"hero-image-s3-key":"thequint/2016-01/a5b61699-6dd7-4930-af2b-62099013adc2/HERO
-        IMAGE.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg","focus-point":[470,92]},"hero-image-caption":"The
-        \u201Cnot so popular\u201D Sunny Leone (Still from  \u2018Mastizaade\u2019)","headline":"Reel
-        QuickE: Unpopular Sunny Leone, Ranveer Thanks Deepika & More ","slug":"videos/2016/01/27/reel-quicke-unpopular-sunny-leone-ranveer-thanks-deepika-and-more"},{"hero-image-s3-key":"thequint/2016-01/0d93e8eb-221f-491d-b15f-ecfed72fe61e/pranab
-        (1).jpg","hero-image-metadata":{"width":1900,"height":1069,"mime-type":"image/jpeg","focus-point":[1063,279]},"hero-image-caption":"File
-        photo of Congress delegation meeting President Pranab Mukherjee. (Photo: IANS)","headline":"Congress
-        Slams Centre for Imposing President\u2019s Rule in Arunachal","slug":"videos/2016/01/27/congress-slams-centre-for-imposing-presidents-rule-in-arunachal"}]}'
+      encoding: UTF-8
+      string: '{"stories":[{"hero-image-s3-key":"thequint/2016-02/dc8ceb0b-5672-4989-bfc4-737b3b7ab59e/BMW-X1.jpg","hero-image-metadata":{"width":2000,"height":1126,"mime-type":"image/jpeg","focus-point":[885,643]},"hero-image-caption":"BMW
+        X1 M Sport badge. (Photo: <b>The Quint</b>)","headline":"First Look: BMW X1
+        M Sport at the Delhi Auto Expo 2016","slug":"delhi-auto-expo-2016/2016/02/15/first-look-bmw-x1-m-sport-at-the-delhi-auto-expo-2016"},{"hero-image-s3-key":"thequint/2016-02/dfa584ef-62fb-4836-b974-2cfaaf6012f7/PANADA
+        2.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[888,533]},"hero-image-caption":"Three
+        adorable dogs have become an online hit, thanks to their unusual panda-like
+        markings. (Photo: AP screengrab)","headline":"Dogs or Pandas? Watch this Video
+        to Find Out What\u2019s in There","slug":"videos/2016/02/15/dogs-or-pandas-watch-this-video-to-find-out-whats-in-there"},{"hero-image-s3-key":"thequint/2016-02/0498fffe-dc86-4def-97ca-f829f13b9823/us.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg","focus-point":[475,245]},"hero-image-caption":"(Photo:
+        AP)","headline":"Watch Out for The Quint\u2019s US Presidential Elections
+        Coverage","slug":"videos/2016/02/15/watch-out-for-the-quints-us-presidential-elections-coverage"},{"hero-image-s3-key":"thequint/2016-02/0b0f366c-a683-4340-9cce-9a8f11ec8d47/fire.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg","focus-point":[483,284]},"hero-image-caption":"(Photo:
+        AP)","headline":"Fire Engulfs the Stage During Make in India Event, Probe
+        Ordered","slug":"videos/2016/02/15/fire-engulfs-the-stage-during-make-in-india-event-probe-ordered"},{"hero-image-s3-key":"thequint/2016-02/dc3a559c-fa96-409e-b903-6fa1267fc835/HERO-Kjeru.jpg","hero-image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg","focus-point":[1101,345]},"hero-image-caption":"Mrs
+        Parminder Chadha has a love filled message for Arvind Kejriwal. Can he handle
+        the wit? (Photo: The Quint)","headline":"Kejriwal Ji, Here\u2019s an Open
+        Love Letter on Your Govt\u2019s Anniversary","slug":"waterqooler/2016/02/13/kejriwal-ji-heres-an-open-love-letter-for-your-govts-anniversary"},{"hero-image-s3-key":"thequint/2016-02/406fe2c9-7891-49bb-a7f4-2a8f5479de7a/obama.00_04_00_09.Still002.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[934,428]},"hero-image-caption":"(Photo:
+        Reuters/Treated by The Quint)","headline":"Obama & Michelle Wish Each Other
+        Happy Valentine\u2019s Day on \u2018Ellen''","slug":"videos/2016/02/13/obama-and-michelle-wish-each-other-happy-valentines-day-on-ellen"},{"hero-image-s3-key":"thequint/2016-02/4ea29a03-a24f-4d84-b7e4-460d7536073e/Raza
+        Hero Image.jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg","focus-point":[983,390]},"hero-image-caption":"Raza
+        Murad tells the story of how he met and fell in love with his wife Samina
+        Murad (Photo: The Quint)","headline":"#MyLoveStory: Raza Murad Tells an  Emotional
+        Tale of Finding Love","slug":"videos/2016/02/12/raza-and-samina-murads-love-story-will-make-you-go-awww"},{"hero-image-s3-key":"thequint/2016-02/172d73a7-324f-41fa-b1b6-80fa0c5106c0/Matru-Pitru
+        (1) (1).JPG","hero-image-metadata":{"width":2475,"height":1392,"mime-type":"image/jpeg","focus-point":[1302,666]},"hero-image-caption":"Valentine\u2019s
+        Day VS. Matru- Pitru Diwas. (Photo: <b>The Quint</b>)","headline":"Valentine\u2019s
+        Day or Matru-Pitru Diwas: What Does Delhi Want?","slug":"videos/2016/02/13/valentines-day-or-matru-pitru-diwas-what-does-delhi-want"},{"hero-image-s3-key":"thequint/2016-02/08c237fd-f9c4-491a-a5c5-ce8a08bd1262/13021-pti2_13_2016_000271b.jpg","hero-image-metadata":{"width":2201,"height":1380,"mime-type":"image/jpeg"},"hero-image-caption":"
+        Rahul Gandhi and many left leaders went to the JNU campus to meet students
+        demanding the release of Student Union president Kanhaiya Kumar. (Photo: PTI)","headline":"\u2018Don\u2019t
+        Let Bullies Push You Around\u2019: Rahul Gandhi to JNU Students","slug":"videos/2016/02/13/dont-let-bullies-push-you-around-rahul-gandhi-to-jnu-students"},{"hero-image-s3-key":"thequint/2016-02/c9d51282-c775-4490-8575-da798ccf788f/modi-hero.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg"},"hero-image-caption":"PM
+        Narendra Modi at the Make in India week launch. (Photo: PTI)","headline":"\u2018Make
+        in India\u2019 Has Become India\u2019s Biggest Brand: Narendra Modi","slug":"videos/2016/02/13/make-in-india-has-become-indias-biggest-brand-narendra-modi"},{"hero-image-s3-key":"thequint/2016-02/e69865f7-cc61-4a79-a70a-c98d74b6d145/JNU-HERO-FINAL.jpg","hero-image-metadata":{"width":1024,"height":576,"mime-type":"image/jpeg"},"hero-image-caption":"(Photo:
+        Reuters)","headline":"Don\u2019t Use JNU Campus for Anti-National Activities:
+        Ex-Servicemen \u00A0","slug":"videos/2016/02/13/dont-use-jnu-campus-for-anti-national-activities-ex-servicemen"},{"hero-image-s3-key":"thequint/2016-02/6e3ff1aa-2286-48f3-a2fe-ba46f2dbc425/villain
+        (1).jpg","hero-image-metadata":{"width":1920,"height":1080,"mime-type":"image/jpeg"},"hero-image-caption":"Raza
+        Murad tells <b><i>The Quint</i></b> why a love story is not a story worth
+        telling, if it doesn\u2019t have a villain.","headline":"Only  a Villain Can
+        Add Some Real Tadka to a Story: Raza Murad","slug":"entertainment/2016/02/13/only-a-villain-can-add-some-real-tadka-to-a-story-raza-murad"}]}'
     http_version: 
-  recorded_at: Mon, 14 Mar 2016 07:25:50 GMT
+  recorded_at: Thu, 24 Mar 2016 11:56:20 GMT
 recorded_with: VCR 3.0.1

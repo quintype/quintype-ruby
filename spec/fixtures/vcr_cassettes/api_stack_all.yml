@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8001/api/config/frontend
+    uri: http://localhost:8001/api/config
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Mar 2016 07:25:49 GMT
+      - Thu, 24 Mar 2016 11:56:27 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,8 +27,9 @@ http_interactions:
       Server:
       - Jetty(9.2.10.v20150310)
     body:
-      encoding: ASCII-8BIT
-      string: '{"updated-at":1453356635224,"editor-url":"http://localhost:9001","sections":[{"id":143,"name":"InfoGraphiQ","display-name":null,"slug":"infographiq"},{"id":72,"name":"Women","display-name":null,"slug":"women"},{"id":2,"name":"Business","display-name":null,"slug":"business"},{"id":62,"name":"Hot
+      encoding: UTF-8
+      string: '{"sketches-host":"http://localhost:8001","facebook":{"app-id":"1534865790101524"},"sections":[{"id":143,"name":"InfoGraphiQ","display-name":null,"slug":"infographiq"},{"id":72,"name":"Women","display-name":null,"slug":"women"},{"id":276,"name":"Delhi
+        Auto Expo 2016","display-name":"Delhi Auto Expo 2016","slug":"delhi-auto-expo-2016"},{"id":2,"name":"Business","display-name":null,"slug":"business"},{"id":62,"name":"Hot
         Wire","display-name":null,"slug":"hot-wire"},{"id":64,"name":"Blogs","display-name":null,"slug":"blogs"},{"id":97,"name":"TorQue","display-name":null,"slug":"torque"},{"id":85,"name":"Bihar
         Elections","display-name":"Bihar Mobile 2015","slug":"bihar-elections"},{"id":144,"name":"Love
         & Sex","display-name":null,"slug":"love-sex"},{"id":146,"name":"LGBTQ","display-name":null,"slug":"lgbtq"},{"id":17,"name":"World","display-name":null,"slug":"world"},{"id":5,"name":"India","display-name":null,"slug":"india"},{"id":56,"name":"Health
@@ -36,228 +37,26 @@ http_interactions:
         & Dine","display-name":null,"slug":"wine-dine"},{"id":16,"name":"WaterQooler","display-name":null,"slug":"waterqooler"},{"id":9,"name":"Photos","display-name":null,"slug":"photos"},{"id":6,"name":"Life","display-name":null,"slug":"life"},{"id":13,"name":"Sports","display-name":null,"slug":"sports"},{"id":232,"name":"Pathankot
         Attack","display-name":"Pathankot Attack","slug":"pathankot-attack"},{"id":189,"name":"Chennai
         Floods","display-name":"Chennai Floods","slug":"chennai-floods"},{"id":254,"name":"Letter
-        To India","display-name":"Letter To India","slug":"letter-to-india"},{"id":7,"name":"Opinion","display-name":null,"slug":"opinion"},{"id":12,"name":"Politics","display-name":null,"slug":"politics"},{"id":14,"name":"Technology","display-name":null,"slug":"technology"},{"id":3,"name":"Entertainment","display-name":null,"slug":"entertainment"},{"id":15,"name":"Videos","display-name":null,"slug":"videos"},{"id":54,"name":"DeQoded","display-name":null,"slug":"deqoded"}],"name":"local_thequint","snippets-by-type":{"instant-articles":["<!--
-        Google Analytics -->\n    <script>\n      var gaTrackerCode = ''UA-58739020-1'';\n      if
-        (gaTrackerCode != null) {\n        (function(i,s,o,g,r,a,m){i[''GoogleAnalyticsObject'']=r;i[r]=i[r]||function(){\n        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
-        Date();a=s.createElement(o),\n        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n        })(window,document,''script'',''//www.google-analytics.com/analytics.js'',''ga'');\n\n        ga(''create'',
-        gaTrackerCode, ''auto'');\n        ga(''send'', ''pageview'');\n      }\n    </script>\n    <!--
-        End Google Analytics -->"]},"social-app-credentials":{"facebook":{"api-key":"1534865790101524","api-secret":"fa52ab346cd7a4754b0e575b0051aec0"},"google":{"api-key":"489973018226-uinu9b8f2rp29g5fm5q3di7vcntk0rs3.apps.googleusercontent.com","api-secret":"uYw3VtvgHIqB1A_aXBUaJXHG"},"linkedin":{"api-key":"78wm0ty3oq0ads","api-secret":"3BORKXQNkHMK8YEW"},"parse":{"app-id":"CHGLIUaBeWdywXhvpHFkwc7mYqdpZJ8Oz1qwCyn1","api-key":"qZE801QU0N8cu6Wgno1Pu0B9lhKupFsIVGuk57dx"},"twitter":{"api-key":"lxebHRZJJWm3osvumTNcgJeFe","api-secret":"GUcn1z4oTCn9MUxPFBgbvBIRIkT5SBIglJ4JAfhRbaCEyMSxKI"}},"menu-items":[{"updated-at":1450224734341,"tag-name":null,"publisher-id":1,"item-id":15,"rank":1,"title":"Videos","item-type":"section","section-slug":"videos","id":16,"created-at":1437549738996,"section-name":"Videos","data":{"color":"#555555"}},{"updated-at":1452571257283,"tag-name":null,"publisher-id":1,"item-id":232,"rank":5,"title":"Pathankot
-        Attack","item-type":"section","section-slug":"pathankot-attack","id":125,"created-at":1452499064741,"section-name":"Pathankot
-        Attack","data":{"color":"#FF4000"}},{"updated-at":1453371434646,"tag-name":null,"publisher-id":1,"item-id":254,"rank":6,"title":"Letter
+        To India","display-name":"Letter To India","slug":"letter-to-india"},{"id":7,"name":"Opinion","display-name":null,"slug":"opinion"},{"id":12,"name":"Politics","display-name":null,"slug":"politics"},{"id":14,"name":"Technology","display-name":null,"slug":"technology"},{"id":3,"name":"Entertainment","display-name":null,"slug":"entertainment"},{"id":15,"name":"Videos","display-name":null,"slug":"videos"},{"id":54,"name":"DeQoded","display-name":null,"slug":"deqoded"}],"social-links":null,"layout":{"stories-between-stacks":4,"menu":[{"updated-at":1450224734341,"tag-name":null,"publisher-id":1,"item-id":15,"rank":1,"title":"Videos","item-type":"section","section-slug":"videos","id":16,"created-at":1437549738996,"section-name":"Videos","data":{"color":"#555555"}},{"updated-at":1454313116949,"tag-name":null,"publisher-id":1,"item-id":276,"rank":5,"title":"Delhi
+        Auto Expo 2016","item-type":"section","section-slug":"delhi-auto-expo-2016","id":144,"created-at":1454306041874,"section-name":"Delhi
+        Auto Expo 2016","data":{"color":"#990432"}},{"updated-at":1454313163097,"tag-name":null,"publisher-id":1,"item-id":3,"rank":6,"title":"Entertainment","item-type":"section","section-slug":"entertainment","id":6,"created-at":1437549738996,"section-name":"Entertainment","data":{"color":"#0078BE"}},{"updated-at":1454313164839,"tag-name":null,"publisher-id":1,"item-id":13,"rank":7,"title":"Sports","item-type":"section","section-slug":"sports","id":7,"created-at":1437549738996,"section-name":"Sports","data":{"color":"#00BE46"}},{"updated-at":1454313167360,"tag-name":null,"publisher-id":1,"item-id":14,"rank":8,"title":"Technology","item-type":"section","section-slug":"technology","id":8,"created-at":1437549738996,"section-name":"Technology","data":{"color":"#FFA01E"}},{"updated-at":1454313169264,"tag-name":null,"publisher-id":1,"item-id":7,"rank":9,"title":"Opinion","item-type":"section","section-slug":"opinion","id":5,"created-at":1437549738996,"section-name":"Opinion","data":{"color":"#ffa01e"}},{"updated-at":1454313169265,"tag-name":null,"publisher-id":1,"item-id":254,"rank":10,"title":"Letter
         to India<br/><em>Brought to you by Motorola</em>","item-type":"section","section-slug":"letter-to-india","id":135,"created-at":1453371355888,"section-name":"Letter
-        To India","data":{"color":"#000000"}},{"updated-at":1453371434645,"tag-name":null,"publisher-id":1,"item-id":3,"rank":7,"title":"Entertainment","item-type":"section","section-slug":"entertainment","id":6,"created-at":1437549738996,"section-name":"Entertainment","data":{"color":"#0078BE"}},{"updated-at":1453371430790,"tag-name":null,"publisher-id":1,"item-id":13,"rank":8,"title":"Sports","item-type":"section","section-slug":"sports","id":7,"created-at":1437549738996,"section-name":"Sports","data":{"color":"#00BE46"}},{"updated-at":1453371427987,"tag-name":null,"publisher-id":1,"item-id":14,"rank":9,"title":"Technology","item-type":"section","section-slug":"technology","id":8,"created-at":1437549738996,"section-name":"Technology","data":{"color":"#FFA01E"}},{"updated-at":1453371425328,"tag-name":null,"publisher-id":1,"item-id":7,"rank":10,"title":"Opinion","item-type":"section","section-slug":"opinion","id":5,"created-at":1437549738996,"section-name":"Opinion","data":{"color":"#ffa01e"}},{"updated-at":1453371422481,"tag-name":null,"publisher-id":1,"item-id":56,"rank":11,"title":"Health
+        To India","data":{"color":"#000000"}},{"updated-at":1454313130479,"tag-name":null,"publisher-id":1,"item-id":56,"rank":11,"title":"Health
         & Fitness","item-type":"section","section-slug":"health-fitness","id":12,"created-at":1437549738996,"section-name":"Health
-        & Fitness","data":{"color":"#5D0060"}},{"updated-at":1453371419590,"tag-name":null,"publisher-id":1,"item-id":72,"rank":12,"title":"Women","item-type":"section","section-slug":"women","id":25,"created-at":1439446504772,"section-name":"Women","data":{"color":"#f12b5b"}},{"updated-at":1453371416886,"tag-name":null,"publisher-id":1,"item-id":12,"rank":13,"title":"Politics","item-type":"section","section-slug":"politics","id":2,"created-at":1437549738996,"section-name":"Politics","data":{"color":"#C24CD1"}},{"updated-at":1453371414480,"tag-name":null,"publisher-id":1,"item-id":5,"rank":14,"title":"India","item-type":"section","section-slug":"india","id":1,"created-at":1437549738996,"section-name":"India","data":{"color":"#AA1E50"}},{"updated-at":1453371405192,"tag-name":null,"publisher-id":1,"item-id":62,"rank":15,"title":"Hot
+        & Fitness","data":{"color":"#5D0060"}},{"updated-at":1454313132154,"tag-name":null,"publisher-id":1,"item-id":72,"rank":12,"title":"Women","item-type":"section","section-slug":"women","id":25,"created-at":1439446504772,"section-name":"Women","data":{"color":"#f12b5b"}},{"updated-at":1454313134990,"tag-name":null,"publisher-id":1,"item-id":12,"rank":13,"title":"Politics","item-type":"section","section-slug":"politics","id":2,"created-at":1437549738996,"section-name":"Politics","data":{"color":"#C24CD1"}},{"updated-at":1454313136983,"tag-name":null,"publisher-id":1,"item-id":5,"rank":14,"title":"India","item-type":"section","section-slug":"india","id":1,"created-at":1437549738996,"section-name":"India","data":{"color":"#AA1E50"}},{"updated-at":1454313139340,"tag-name":null,"publisher-id":1,"item-id":62,"rank":15,"title":"Hot
         Wire","item-type":"section","section-slug":"hot-wire","id":14,"created-at":1437549738996,"section-name":"Hot
-        Wire","data":{"color":"#F42558"}},{"updated-at":1453371402261,"tag-name":null,"publisher-id":1,"item-id":54,"rank":16,"title":"DeQoded","item-type":"section","section-slug":"deqoded","id":11,"created-at":1437549738996,"section-name":"DeQoded","data":{"color":"#7d00b3"}},{"updated-at":1453371398255,"tag-name":null,"publisher-id":1,"item-id":17,"rank":25,"title":"World","item-type":"section","section-slug":"world","id":3,"created-at":1437549738996,"section-name":"World","data":{"color":"#00BEC8"}},{"updated-at":1453371394470,"tag-name":null,"publisher-id":1,"item-id":2,"rank":36,"title":"Business","item-type":"section","section-slug":"business","id":4,"created-at":1437549738996,"section-name":"Business","data":{"color":"#FFC100"}},{"updated-at":1453371390478,"tag-name":null,"publisher-id":1,"item-id":6,"rank":45,"title":"Life","item-type":"section","section-slug":"life","id":9,"created-at":1437549738996,"section-name":"Life","data":{"color":"#F00064"}},{"updated-at":1453371387566,"tag-name":null,"publisher-id":1,"item-id":9,"rank":66,"title":"Photos","item-type":"section","section-slug":"photos","id":15,"created-at":1437549738996,"section-name":"Photos","data":{"color":"#FF6464"}},{"updated-at":1453371384204,"tag-name":null,"publisher-id":1,"item-id":16,"rank":67,"title":"WaterQooler","item-type":"section","section-slug":"waterqooler","id":10,"created-at":1437549738996,"section-name":"WaterQooler","data":{"color":"#ECC7F0"}},{"updated-at":1453371380398,"tag-name":null,"publisher-id":1,"item-id":97,"rank":68,"title":"TorQue","item-type":"section","section-slug":"torque","id":36,"created-at":1440994990137,"section-name":"TorQue","data":{"color":"#0f3250","link":""}},{"updated-at":1453371377655,"tag-name":null,"publisher-id":1,"item-id":147,"rank":69,"title":"Wine
+        Wire","data":{"color":"#F42558"}},{"updated-at":1454313141023,"tag-name":null,"publisher-id":1,"item-id":54,"rank":16,"title":"DeQoded","item-type":"section","section-slug":"deqoded","id":11,"created-at":1437549738996,"section-name":"DeQoded","data":{"color":"#7d00b3"}},{"updated-at":1454313143103,"tag-name":null,"publisher-id":1,"item-id":17,"rank":25,"title":"World","item-type":"section","section-slug":"world","id":3,"created-at":1437549738996,"section-name":"World","data":{"color":"#00BEC8"}},{"updated-at":1454313145973,"tag-name":null,"publisher-id":1,"item-id":2,"rank":36,"title":"Business","item-type":"section","section-slug":"business","id":4,"created-at":1437549738996,"section-name":"Business","data":{"color":"#FFC100"}},{"updated-at":1454313147705,"tag-name":null,"publisher-id":1,"item-id":6,"rank":45,"title":"Life","item-type":"section","section-slug":"life","id":9,"created-at":1437549738996,"section-name":"Life","data":{"color":"#F00064"}},{"updated-at":1454313149898,"tag-name":null,"publisher-id":1,"item-id":9,"rank":66,"title":"Photos","item-type":"section","section-slug":"photos","id":15,"created-at":1437549738996,"section-name":"Photos","data":{"color":"#FF6464"}},{"updated-at":1454313152779,"tag-name":null,"publisher-id":1,"item-id":16,"rank":67,"title":"WaterQooler","item-type":"section","section-slug":"waterqooler","id":10,"created-at":1437549738996,"section-name":"WaterQooler","data":{"color":"#ECC7F0"}},{"updated-at":1454313155367,"tag-name":null,"publisher-id":1,"item-id":97,"rank":68,"title":"TorQue","item-type":"section","section-slug":"torque","id":36,"created-at":1440994990137,"section-name":"TorQue","data":{"color":"#0f3250","link":""}},{"updated-at":1454313155368,"tag-name":null,"publisher-id":1,"item-id":232,"rank":69,"title":"Pathankot
+        Attack","item-type":"section","section-slug":"pathankot-attack","id":125,"created-at":1452499064741,"section-name":"Pathankot
+        Attack","data":{"color":"#FF4000"}},{"updated-at":1454306054893,"tag-name":null,"publisher-id":1,"item-id":147,"rank":74,"title":"Wine
         & Dine","item-type":"section","section-slug":"wine-dine","id":66,"created-at":1444893223946,"section-name":"Wine
-        & Dine","data":{"color":"#ffaf00"}},{"updated-at":1453371375210,"tag-name":null,"publisher-id":1,"item-id":146,"rank":74,"title":"LGBTQ","item-type":"section","section-slug":"lgbtq","id":74,"created-at":1446434939538,"section-name":"LGBTQ","data":{"color":"#DB145A"}},{"updated-at":1453371372658,"tag-name":null,"publisher-id":1,"item-id":64,"rank":102,"title":"Blogs","item-type":"section","section-slug":"blogs","id":13,"created-at":1437549738996,"section-name":"Blogs","data":{"color":"#555555"}},{"updated-at":1453371368546,"tag-name":null,"publisher-id":1,"item-id":143,"rank":122,"title":"InfographiQ","item-type":"section","section-slug":"infographiq","id":67,"created-at":1445241653622,"section-name":"InfoGraphiQ","data":{"color":"#0080FF"}},{"updated-at":1453371365559,"tag-name":null,"publisher-id":1,"item-id":null,"rank":125,"title":"Subscribe
-        to Newsletter ","item-type":"link","section-slug":null,"id":68,"created-at":1445312747650,"section-name":null,"data":{"color":"#444444","link":"http://eepurl.com/bo_kl9"}},{"updated-at":1453371361900,"tag-name":null,"publisher-id":1,"item-id":null,"rank":135,"title":"Download
-        Android App","item-type":"link","section-slug":null,"id":69,"created-at":1445312988314,"section-name":null,"data":{"color":"#444444","link":"https://play.google.com/store/apps/details?id=com.thequint.mobile.android&hl=en"}}],"template":"thequint","website-url":"http://localhost:8001","html-snippets":{"global":{"top":["<!--
-        Google Analytics -->\n    <script>\n      var gaTrackerCode = ''UA-58739020-1'';\n      if
-        (gaTrackerCode != null) {\n        (function(i,s,o,g,r,a,m){i[''GoogleAnalyticsObject'']=r;i[r]=i[r]||function(){\n        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
-        Date();a=s.createElement(o),\n        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n        })(window,document,''script'',''//www.google-analytics.com/analytics.js'',''ga'');\n\n        ga(''create'',
-        gaTrackerCode, ''auto'');\n        ga(''send'', ''pageview'');\n      }\n    </script>\n    <!--
-        End Google Analytics -->","<!-- Begin comScore Tag -->\n<script>\n  var _comscore
-        = _comscore || [];\n  _comscore.push({ c1: \"2\", c2: \"20519288\" });\n  (function()
-        {\n    var s = document.createElement(\"script\"), el = document.getElementsByTagName(\"script\")[0];
-        s.async = true;\n    s.src = (document.location.protocol == \"https:\" ? \"https://sb\"
-        : \"http://b\") + \".scorecardresearch.com/beacon.js\";\n    el.parentNode.insertBefore(s,
-        el);\n  })();\n</script>\n<noscript>\n  <img src=\"http://b.scorecardresearch.com/p?c1=2&c2=20519288&cv=2.0&cj=1\"
-        />\n</noscript>\n<!-- End comScore Tag -->"],"bottom":["<!-- Google Code for
-        Remarketing Tag -->\n<!--------------------------------------------------\nRemarketing
-        tags may not be associated with personally identifiable information or placed
-        on pages related to sensitive categories. See more information and instructions
-        on how to setup the tag on: http://google.com/ads/remarketingsetup\n--------------------------------------------------->\n<script
-        type=\"text/javascript\">\n/* <![CDATA[ */\nvar google_conversion_id = 951304597;\nvar
-        google_custom_params = window.google_tag_params;\nvar google_remarketing_only
-        = true;\n/* ]]> */\n</script>\n<script type=\"text/javascript\" src=\"//www.googleadservices.com/pagead/conversion.js\">\n</script>\n<noscript>\n<div
-        style=\"display:inline;\">\n<img height=\"1\" width=\"1\" style=\"border-style:none;\"
-        alt=\"\" src=\"//googleads.g.doubleclick.net/pagead/viewthroughconversion/951304597/?value=0&amp;guid=ON&amp;script=0\"/>\n</div>\n</noscript>","<!--
-        Begin Twitter Pixel Tracker code -->\n<script src=\"//platform.twitter.com/oct.js\"
-        type=\"text/javascript\"></script>\n<script type=\"text/javascript\">twttr.conversion.trackPid(''l6tg2'',
-        { tw_sale_amount: 0, tw_order_quantity: 0 });</script>\n<noscript>\n<img height=\"1\"
-        width=\"1\" style=\"display:none;\" alt=\"\" src=\"https://analytics.twitter.com/i/adsct?txn_id=l6tg2&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0\"
-        />\n<img height=\"1\" width=\"1\" style=\"display:none;\" alt=\"\" src=\"//t.co/i/adsct?txn_id=l6tg2&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0\"
-        />\n</noscript>\n<!-- End Twitter Pixel Tracker code -->","<!-- Javascript
-        tag  -->\n<!-- begin ZEDO for channel: \u2020Quint_WAP_Homepage , publisher:
-        thequint.com , Ad Dimension: Mobile_Floater_Stayon - 1 x 1 -->\n<script language=\"JavaScript\">\nvar
-        zflag_nid=\"3294\"; var zflag_cid=\"36\"; var zflag_sid=\"1\"; var zflag_width=\"1\";
-        var zflag_height=\"1\"; var zflag_sz=\"28\"; \n</script>\n<script language=\"JavaScript\"
-        src=\"http://xp2.zedo.com/jsc/xp2/fo.js\"></script>\n<!-- end ZEDO for channel:
-        \u2020Quint_WAP_Homepage , publisher: thequint.com , Ad Dimension: Mobile_Floater_Stayon
-        - 1 x 1 -->"],"head":["<!-- Facebook Pixel Code -->\n<script>\n!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;\nn.push=n;n.loaded=!0;n.version=''2.0'';n.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,\ndocument,''script'',''//connect.facebook.net/en_US/fbevents.js'');\n\nfbq(''init'',
-        ''1632065343714537'');\nfbq(''track'', \"PageView\");</script>\n<noscript><img
-        height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=1632065343714537&ev=PageView&noscript=1\"\n/></noscript>\n<!--
-        End Facebook Pixel Code -->","<link href=''https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700''
-        rel=''stylesheet'' type=''text/css''>"]},"home":{"head":["<meta name=\"msvalidate.01\"
-        content=\"8AA5BEBEECCCA34F186C5B8029293D86\" />"],"bottom":["<!-- Javascript
-        tag: -->\n<!-- begin ZEDO for channel:  Quint_Intromercial_Homepage , publisher:
-        thequint.com , Ad Dimension: Intomercial - 1 x 1 -->\n<script language=\"JavaScript\">\nvar
-        zflag_nid=\"3294\"; var zflag_cid=\"46\"; var zflag_sid=\"1\"; var zflag_width=\"1\";
-        var zflag_height=\"1\"; var zflag_sz=\"49\"; \n</script>\n<script language=\"JavaScript\"
-        src=\"http://xp2.zedo.com/jsc/xp2/fo.js\"></script>\n<!-- end ZEDO for channel:  Quint_Intromercial_Homepage
-        , publisher: thequint.com , Ad Dimension: Intomercial - 1 x 1 -->"]}},"title":"The
-        Quint","seo-metadata":[{"id":11,"publisher-id":1,"owner-type":"section","owner-id":7,"unused-guid":null,"data":{"title":"The
-        Quint: For News, Opinion, Op-Eds, Editorials, Features, Videos Articles","description":"For
-        the finest Opinion, Editorials, Op-Eds, Features, Videos, on Politics, Movies,
-        Tech, Sports, Business, Finance, World News, Current Affairs, Food, Health
-        - read TheQuint.com","keywords":"News Opinion, Business News Opinion, Tech
-        News Opinion, Sport News Opinion, World News Opinion, Videos, Features, The
-        Quint","page-title":"The finest Opinion, Editorials, Op-Eds, Features & Videos:
-        The Quint"},"created-at":1433370654196,"updated-at":1434442656706},{"id":2,"publisher-id":1,"owner-type":"section","owner-id":17,"unused-guid":null,"data":{"title":"The
-        Quint: Latest International News, Features, Videos and Infographics","description":"For
-        the latest International News, World News, Headlines from the USA, China,
-        Europe, Asia, Africa, the Middle East, Pakistan, Australia, News Videos, News
-        Features - visit TheQuint.com","keywords":"Latest International News, World
-        News, World Headlines, USA, Europe, Asia, China, Pakistan, Features, Videos,
-        The Quint","page-title":"World News, Latest International News, Headlines
-        & Videos: The Quint"},"created-at":1432094933660,"updated-at":1434442244143},{"id":13,"publisher-id":1,"owner-type":"section","owner-id":16,"unused-guid":null,"data":{"title":"The
-        Quint: Strange and Odd News, Features, Videos, Water Cooler News and Articles","description":"For
-        Water Cooler Stories, Articles, Features, weird, strange and offbeat news
-        across India and the world - visit TheQuint.com","keywords":"WaterQooler News,
-        Water Cooler News, Strange News, Odd News, Offbeat News, Weird News, Features,
-        Videos, The Quint","page-title":"Strange & Odd News, Weird, Bizarre Stories,
-        Watercooler: The Quint"},"created-at":1433371358602,"updated-at":1434442981822},{"id":3,"publisher-id":1,"owner-type":"section","owner-id":3,"unused-guid":null,"data":{"title":"The
-        Quint: Latest Bollywood, Hollywood News, Movies, Celebs, Features, Reviews
-        and Videos","description":"Catch all the Entertainment News, Features and
-        Reviews and Videos from Bollywood and Hollywood. For the Latest Entertainment,
-        Bollywood, Hollywood, Movie, news, features and reviews -- read TheQuint.com","keywords":"Entertainment
-        News, Bollywood News, Hollywood News, Celebrities, Movies, Film Reviews, Features,
-        Videos, The Quint","page-title":"Latest Bollywood & Hollywood News, Celeb
-        News, Movies: The Quint"},"created-at":1432095031394,"updated-at":1434442794890},{"id":1,"publisher-id":1,"owner-type":"home","owner-id":null,"unused-guid":null,"data":{"title":"For
-        the latest Political, Business, Sports, Entertainment, World, Technology and
-        General News, visit thequint.com The Quint is a favourite destination for
-        all kinds of news.","description":"The Quint: For the latest Political, Business,
-        Sports, Entertainment, World, Technology and General News, visit thequint.com
-        The Quint is a favourite destination for all kinds of news.","keywords":"Latest
-        Political News, Business News, Sports News, Entertainment News, World News,
-        Features, Videos","page-title":"Latest Political, Sports & Entertainment News
-        & Features: The Quint"},"created-at":1432017926529,"updated-at":1448926781913},{"id":8,"publisher-id":1,"owner-type":"section","owner-id":13,"unused-guid":null,"data":{"title":"The
-        Quint: The Latest Sports News on Cricket, Football, Badminton, F1 , Sports
-        Videos, Sports Features","description":"Get the latest Sports News, Features
-        and Videos on Cricket, Football, Tennis, Badminton, F1, Basketball and other
-        sports: visit thequint.com","keywords":"Sports News, Latest Sports News, Cricket
-        News, Football News, Badminton News, F1 News, Sports Videos, Sports Features,
-        The Quint","page-title":"Latest Sports news about Cricket, Football, Badminton,
-        F1: The Quint"},"created-at":1433370423462,"updated-at":1434442619858},{"id":14,"publisher-id":1,"owner-type":"section","owner-id":54,"unused-guid":null,"data":{"title":"The
-        Quint: News Decoded, News Explained, DeQoded ","description":"Simple Explainers
-        of the current affairs and news, explained simply, in the The Quint''s usual
-        breezy style. Get on top of the  latest news from India and around the world
-        in DeQoded - visit TheQuint.com","keywords":"DeQoded News, News Explained,
-        News Decoded, The Quint","page-title":"News Decoded, News Explained, News
-        Perspective, DeQoded: The Quint"},"created-at":1433372123345,"updated-at":1434442892546},{"id":10,"publisher-id":1,"owner-type":"section","owner-id":15,"unused-guid":null,"data":{"title":"The
-        Quint: Latest News Videos, Features Videos, Entertainment Videos, Stand-Ups,
-        Satire","description":"For the latest News Videos,  Features and Entertainment
-        Videos, Stand-Ups, Satire, Current Affairs Videos, Business News Videos, Sports
-        News Videos from India and around the world - visit TheQuint.com","keywords":"News
-        Videos,  Features Videos, Entertainment Videos, Stand-Ups, Satire, Current
-        Affairs Videos, Business News Videos, Sports News Videos.","page-title":"Latest
-        News and Entertainment Videos, Features & Stand-Ups: The Quint"},"created-at":1433370586817,"updated-at":1434442847122},{"id":4,"publisher-id":1,"owner-type":"section","owner-id":6,"unused-guid":null,"data":{"title":"The
-        Quint: Stories on Life, Love, Lifestyle, Relationships and Living","description":"For
-        good articles on Life, Relationships, Lifestyle and Living, visit TheQuint.com","keywords":"Articles
-        on Life, Articles Today On Life, Top Articles On Life, The Quint","page-title":"Stories
-        on Life, Love, Lifestyle, Relationships and Living: The Quint"},"created-at":1432095288493,"updated-at":1434442577876},{"id":12,"publisher-id":1,"owner-type":"section","owner-id":14,"unused-guid":null,"data":{"title":"The
-        Quint: Latest on Technology News, Mobiles, Gadget, Apps, Features, Videos","description":"For
-        latest Technology news, news about the latest mobile phones, gadgets, computers,
-        software, hardware, consumer electronics, Telecom, ecommerce, IT news, features,
-        videos - visit TheQuint.com","keywords":"Technology News, Mobile Phone, Smartphones,
-        Smartphone Reviews, iPhone, Apple, Samsung, News, Gadgets, Computers, Software,
-        Hardware, Consumer Electronics, ecommerce News, Webculture, Tim Cook, Facebook,
-        Twitter, Technology Reviews, First impressions, Smartphone Launches, App Reviews,
-        Game reviews, PlayStation, XBox, Microsoft, MacBook, Motorola, Lenovo ","page-title":"Latest
-        Technology News, Mobiles, Gadget and Videos: The Quint"},"created-at":1433370703814,"updated-at":1440997890270},{"id":7,"publisher-id":1,"owner-type":"section","owner-id":5,"unused-guid":null,"data":{"title":"The
-        Quint: Latest Indian News, Headlines, Features, Breaking News and Videos from
-        India ","description":"For the latest news from India, Top Headlines, Breaking
-        News, Live News, News Features and News Videos - visit TheQuint.com ","keywords":"India
-        News, Latest India News, News Videos, News Features, Breaking News from India,
-        News from India, Top India Headlines, The Quint","page-title":"Latest News
-        from India, Breaking News, Top Headlines: The Quint"},"created-at":1433370339640,"updated-at":1434442281817},{"id":9,"publisher-id":1,"owner-type":"section","owner-id":12,"unused-guid":null,"data":{"title":"The
-        Quint: Latest Political News, Political Features, Videos and Infographics","description":"For
-        the latest Political News, Political Features, Videos and Infographics from
-        India and around the world, visit TheQuint.com","keywords":"Political News,
-        Current Political News, Today''s Political News, Political Features, Videos,
-        The Quint","page-title":"Latest Political News, Political Features and Videos:
-        The Quint"},"created-at":1433370507895,"updated-at":1434442696539},{"id":15,"publisher-id":1,"owner-type":"section","owner-id":56,"unused-guid":null,"data":{"title":"The
-        Quint: Latest Health News, Health Features, Videos, Diet, Fitness, Lifestyle
-        Ailments, Alternative Medicine, Therapies","description":"Get the Latest on
-        Health News, Health Features, Health Videos, Diets, Fitness, Alternative Medicine,
-        Therapies, Lifestyle Ailments - visit TheQuint.com","keywords":"Health, Fitness,
-        Diet, Health News, Health Videos, Lifestyle Ailments, Diseases, Health Features,
-        Alternative Medicine, Therapies, The Quint","page-title":"Latest Health News,
-        Diets, Fitness, Lifestyle Ailments: The Quint"},"created-at":1433390187064,"updated-at":1434442327056},{"id":5,"publisher-id":1,"owner-type":"section","owner-id":9,"unused-guid":null,"data":{"title":"The
-        Quint: Latest News Photos, Slideshows, Photo Gallery, Photo Features, Business
-        News Photos, Sports Photos, Entertainment Photos, Tech Photos, Business News
-        Photos, Political News Photos, Celeb Photos, Car Photos","description":"For
-        Photos, Photo Galleries, Slide Shows, Photo Features of the latest News, Business
-        News, Sports News, Entertainment News, Tech News, Business News, Political
-        News, Celebs, Cars, Models - visit TheQuint.com","keywords":"Photos, Photo
-        Galleries, Slide Shows, Photo Features, Picture Galleries, Politics Photos,
-        Business Photos, Sports Photos, Entertainment Photos, Tech Photos,Celebs Photos,
-        Movie Pictures, Car Photos, Photos of hot Models, The Quint","page-title":"Latest
-        News Photos, Slideshows, Photo Gallery and Features: The Quint"},"created-at":1432095470241,"updated-at":1434442529897},{"id":6,"publisher-id":1,"owner-type":"section","owner-id":2,"unused-guid":null,"data":{"title":"The
-        Quint: Latest Business News, Features, Videos on Stock Markets, Personal Finance,
-        Indian Business News, World Business News, Finance, Economics","description":"Get
-        the Latest on Business News, Personal Finance, Stock Markets, World Business,
-        Sensex, BSE, NSE, Nifty, Stock Market news - visit TheQuint.com","keywords":"Business
-        News, Financial News, Personal Finance, Stock Market News, Sensex News, BSE
-        News, NSE Nifty News, Features, Videos, The Quint","page-title":"Latest news
-        about Business, Stock Markets, Personal Finance: The Quint"},"created-at":1433370259231,"updated-at":1448526451192},{"id":18,"publisher-id":1,"owner-type":"section","owner-id":72,"unused-guid":null,"data":{"page-title":"Latest
-        Women''s Issues & News, Health, Fitness, Trends, Lifestyle, Fashion: The Quint","title":"The
-        Quint: Latest Women''s Issues & News, Fitness Features, Trends, Videos, Lifestyle
-        and Fashion","description":"Get the latest news on Women\u2019s Issues, Health
-        and Fitness, Videos, Lifestyle, Fashion - visit TheQuint.com ","keywords":"Women
-        Issues & News, Health, Fitness, Trends, Lifestyle, Fashion, The Quint"},"created-at":1439447348223,"updated-at":1442057484763},{"id":21,"publisher-id":1,"owner-type":"section","owner-id":85,"unused-guid":null,"data":{"page-title":"Bihar
-        Assembly Elections 2015: News, Opinon, Analysis, Features, Videos and Infographics:
-        The Quint","title":"The Quint: Bihar Assembly Election News, Bihar Election
-        Features, Analysis, Videos and Infographics","description":"Bihar Assembly
-        Elections 2015: for latest News, Features, Opinion, Analysis and Infographics
-        on the Bihar Assembly Elections 2015, visit www.thequint.com","keywords":"Bihar
-        Assembly Elections 2015 News, Lalu Prasad, Nitish Kumar, Narendra Modi, Jitan
-        Ram Manjhi, Ram Vilas Paswan, Assaduddin Owaisi, Sushil Modi, Political News,
-        Today''s Bihar Assembly Elections 2015 News, Political Features, Videos, The
-        Quint"},"created-at":1442975772257,"updated-at":1448919753147},{"id":19,"publisher-id":1,"owner-type":"section","owner-id":97,"unused-guid":null,"data":{"page-title":"Latest
-        Automobile News, Reviews, Cars, Bikes, First Drives, Videos, Auto Accessories:
-        The Quint","title":"The Quint: Latest Automobile News, Reviews, Cars, Bikes,
-        Test Drives, Videos, Auto Accessories","description":"For the latest Automobile
-        News, Reviews, Car & Bike Launches, First Drives, Auto Accessories - visit
-        TheQuint.com","keywords":"Cars, bikes, automobile news, car reviews, car prices,
-        used cars, auto launches, first drive, latest cars & bikes, features, auto
-        industry reports, SUV, MUV, sedan, hatch back, BHP, mileage"},"created-at":1440996262108,"updated-at":1442058272472},{"id":22,"publisher-id":1,"owner-type":"section","owner-id":147,"unused-guid":null,"data":{"page-title":"Food
-        & Drink, Recipes, Restaurants, Healthy Eating, Health Food, Cooking, Indian
-        Recipes, Food Festivals, Fine Dining, Wine and Restaurant Reviews: The Quint
-        ","title":"The Quint: Food & Drink, Recipes, Restaurants, Healthy Eating,
-        Health Food, Cooking, Indian Recipes, Food Festivals, Wine and Restaurant
-        Reviews, Fine Dining, Wine & Dine ","description":"Get the Best on Food and
-        Drink, Recipes, Restaurants, Healthy Recipes, Restaurant Reviews, Healthy
-        Food and Diet, Food Festivals and Wine - visit TheQuint.com","keywords":"Latest
-        Food News, Healthy Recipes, Restaurant Reviews, Healthy Food and Diet, Food
-        Festivals, Wine and Dine, The Quint"},"created-at":1444893957146,"updated-at":1445080191331},{"id":20,"publisher-id":1,"owner-type":"section","owner-id":64,"unused-guid":null,"data":{"page-title":"Best
-        Blogs From The Finest Minds Across A Range Of Topics - The Quint","title":"The
-        Quint: Best Blogs From The Finest Minds Across A Range Of Topics","description":"Read
-        excellent blogs by fine writers, on topics ranging from Politics, Food, Bikes,
-        to Business, Bollywood, Sports & more!","keywords":"Blogs, Writers, Bloggers,
-        Blogging, Politics, Food, Entertainment, Women, Business, Technology, Cricket,
-        Sport"},"created-at":1442058990022,"updated-at":1442060558794},{"id":30,"publisher-id":1,"owner-type":"section","owner-id":146,"unused-guid":null,"data":{"page-title":"LGBT:
-        News, Features, Opinion, Videos, Analysis & Infographics pertaining to the
-        LGBT community: The Quint","title":"The Quint: LGBT: News, Features, Opinion,
-        Videos, Analysis & Infographics pertaining to the LGBT community.","description":"LGBT:
-        For the latest News, fine Features, Opinion, Videos, Analysis & Infographics
-        pertaining to the LGBT community, visit TheQuint.com","keywords":"LGBT, Gay,
-        Queer, Transgender, Cross-Dressing, Lesbian, Bi-Sexual, Transvestite, Lady
-        Boy, Hermaphrodite."},"created-at":1448924171416,"updated-at":1448926951749},{"id":23,"publisher-id":1,"owner-type":"section","owner-id":143,"unused-guid":null,"data":{"page-title":"Data
-        Journalism: Latest News Through Interactive Data Visualisation, Infographics,
-        Heat Maps, Charts, Graphs: The Quint","title":"The Quint: Interactive Data
-        Journalism,  Infographics, Infographs, Data Visualisation, Graphs, Interactives,
-        News, Open data, Data Journalism, data driven journalism, maps, India, world
-        maps, heat maps","description":"Data Journalism: Latest News & Analysis using
-        Interactive Data Visualisation, Infographics, Heat Maps, Charts, Graphs: visit
-        TheQuint.com","keywords":"Data Journalism, Data Visualisation, Infographics,
-        Charts, Graphs, Data, Interactives, Mobile customised infographs, statistics"},"created-at":1445241539621,"updated-at":1448925677429}],"id":1,"info":{},"access":"public","apps-data":{"al:android:package":"com.thequint.mobile.android","al:android:app_name":"TheQuint"},"static-pages":[],"auth-url":"http://localhost:8001","story-attributes":[],"css-template":null,"stacks":[{"show-on-locations":[null,null,null,null,null,null,null,null],"background-color":"#F12B5B","rank":1,"type":"stack","story-group":"stack-5","deleted-at":null,"max-stories":"5","id":5,"show-on-all-sections?":true,"heading":"Hot
-        Wire"},{"show-on-locations":["Home"],"background-color":"#FFC100","rank":1,"type":"stack","story-group":"featured","deleted-at":null,"max-stories":5,"id":3,"show-on-all-sections?":true,"heading":"QuintEssential"},{"show-on-locations":["Home","InfoGraphiQ","Women","Business","Hot
+        & Dine","data":{"color":"#ffaf00"}},{"updated-at":1454306053148,"tag-name":null,"publisher-id":1,"item-id":144,"rank":102,"title":"Love
+        & Sex","item-type":"section","section-slug":"love-sex","id":143,"created-at":1454295699150,"section-name":"Love
+        & Sex","data":{"color":"#990776"}},{"updated-at":1454306050967,"tag-name":null,"publisher-id":1,"item-id":146,"rank":122,"title":"LGBTQ","item-type":"section","section-slug":"lgbtq","id":74,"created-at":1446434939538,"section-name":"LGBTQ","data":{"color":"#DB145A"}},{"updated-at":1454306049234,"tag-name":null,"publisher-id":1,"item-id":64,"rank":125,"title":"Blogs","item-type":"section","section-slug":"blogs","id":13,"created-at":1437549738996,"section-name":"Blogs","data":{"color":"#555555"}},{"updated-at":1454306047626,"tag-name":null,"publisher-id":1,"item-id":143,"rank":135,"title":"InfographiQ","item-type":"section","section-slug":"infographiq","id":67,"created-at":1445241653622,"section-name":"InfoGraphiQ","data":{"color":"#0080FF"}},{"updated-at":1454306045960,"tag-name":null,"publisher-id":1,"item-id":null,"rank":143,"title":"Subscribe
+        to Newsletter ","item-type":"link","section-slug":null,"id":68,"created-at":1445312747650,"section-name":null,"data":{"color":"#444444","link":"http://eepurl.com/bo_kl9"}},{"updated-at":1454306043996,"tag-name":null,"publisher-id":1,"item-id":null,"rank":144,"title":"Download
+        Android App","item-type":"link","section-slug":null,"id":69,"created-at":1445312988314,"section-name":null,"data":{"color":"#444444","link":"https://play.google.com/store/apps/details?id=com.thequint.mobile.android&hl=en"}}],"stacks":[{"show-on-locations":[null,null,null,null,null,null,null,null],"background-color":"#F12B5B","rank":1,"type":"stack","story-group":"stack-5","deleted-at":null,"max-stories":"5","id":5,"show-on-all-sections?":true,"heading":"Hot
+        Wire"},{"show-on-locations":["Home"],"background-color":"#FFC100","rank":2,"type":"stack","story-group":"featured","deleted-at":null,"max-stories":5,"id":3,"show-on-all-sections?":true,"heading":"QuintEssential"},{"show-on-locations":["Home","InfoGraphiQ","Women","Business","Hot
         Wire","Blogs","TorQue","Bihar Elections","Love & Sex","LGBTQ","World","India","Health
-        & Fitness","QReview","Wine & Dine","WaterQooler","Photos","Life","Opinion","Politics","Technology","Entertainment","Videos","DeQoded"],"background-color":"#7D00B3","rank":2,"type":"stack","story-group":"trending","deleted-at":null,"max-stories":5,"id":1,"show-on-all-sections?":true,"heading":"Trending"},{"show-on-locations":[],"background-color":"#FAA005","rank":5,"type":"stack","story-group":"stack-39","deleted-at":null,"max-stories":5,"id":39,"show-on-all-sections?":true,"heading":"Letter
-        To India"}]}'
+        & Fitness","QReview","Wine & Dine","WaterQooler","Photos","Life","Opinion","Politics","Technology","Entertainment","Videos","DeQoded"],"background-color":"#7D00B3","rank":3,"type":"stack","story-group":"trending","deleted-at":null,"max-stories":5,"id":1,"show-on-all-sections?":true,"heading":"Trending"},{"show-on-locations":[null],"background-color":"#00c5c5","rank":4,"type":"stack","story-group":"stack-11","deleted-at":null,"max-stories":5,"id":11,"show-on-all-sections?":true,"heading":"Videos"},{"show-on-locations":[],"background-color":"#DF01A5","rank":5,"type":"stack","story-group":"stack-42","deleted-at":null,"max-stories":5,"id":42,"show-on-all-sections?":false,"heading":"#MyLoveStory"}]},"cdn-name":"http://d9zv4zsfqrm9s.cloudfront.net/","num-headlines":5,"env":"dev","initial-stories-per-page":40,"typekit-id":"fxm3vbg","cdn-image":"qt-staging-01.imgix.net","story-slug-format":"{{section}}/{{first-published-at|YYYY/MM/dd}}","android":{"notification-style":"individual"},"airbrake":{"projectId":null,"apiKey":null},"shrubbery-host":"http://analytics.lvh.me:5001","nudge-host":"http://localhost:8001","num-more-stories":20,"razorpay-gateway-key":null,"story-attributes":[],"mins-between-refreshes":25}'
     http_version: 
-  recorded_at: Mon, 14 Mar 2016 07:25:49 GMT
+  recorded_at: Thu, 24 Mar 2016 11:56:27 GMT
 recorded_with: VCR 3.0.1

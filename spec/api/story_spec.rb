@@ -41,8 +41,8 @@ describe API::Story do
   describe '#find_by_stacks'  do
     it 'gives stories for stacks' , :vcr => { cassette_name: "api_story_find_by_stacks" } do
       config = API.config
-      stacks_stories = described_class.find_by_stacks(config['stacks'])
-      stack_names = config['stacks'].map { |s| s['story_group'] }
+      stacks_stories = described_class.find_by_stacks(config['layout']['stacks'])
+      stack_names = config['layout']['stacks'].map { |s| s['story_group'] }
       expect(stacks_stories.keys).to eq(stack_names)
       stacks_stories.each_pair do |story_group, stories|
         expect(stories.count).to be > 0
@@ -51,8 +51,8 @@ describe API::Story do
 
     it 'gives stories for stacks for a params passed', :vcr => { cassette_name: "api_story_find_by_stacks_and_sections" } do
       config = API.config
-      stacks_stories = described_class.find_by_stacks(config['stacks'], {'section' => 'India'})
-      stack_names = config['stacks'].map { |s| s['story_group'] }
+      stacks_stories = described_class.find_by_stacks(config['layout']['stacks'], {'section' => 'India'})
+      stack_names = config['layout']['stacks'].map { |s| s['story_group'] }
       expect(stacks_stories.keys).to eq(stack_names)
       stacks_stories.each_pair do |story_group, stories|
         expect(stories.count).to be > 0
@@ -65,7 +65,7 @@ describe API::Story do
       stories = described_class.where({limit: 1})
       story = stories.first
 
-      expect(story.time_in_minutes).to eq 2
+      expect(story.time_in_minutes).to eq 6
     end
   end
 
@@ -87,7 +87,7 @@ describe API::Story do
       expect(serialized_story['sections'].first.keys).to include("display_name")
       expect(serialized_story['tags'].first.keys).to include("url")
       expect(serialized_story['sections'].first).to eq({"id"=>5, "name"=>"India", "display_name"=>"India"})
-      expect(serialized_story['tags'].first).to eq({"id"=>26721, "name"=>"Rohith Vemula", "url"=>"/topic/Rohith%20Vemula"})
+      expect(serialized_story['tags'].first).to eq({"id"=>1821, "name"=>"Afzal Guru", "url"=>"/topic/Afzal%20Guru"})
     end
   end
 end

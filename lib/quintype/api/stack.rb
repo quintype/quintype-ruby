@@ -2,7 +2,7 @@ class API
   class Stack
     class << self
       def all
-        API.config['stacks']
+        API.config['layout']['stacks']
       end
       #TODO filter by stacks
       def with_stories(params={}, config={})
