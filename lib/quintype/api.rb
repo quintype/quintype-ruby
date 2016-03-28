@@ -147,6 +147,12 @@ class API
       _post("member/login", auth)
     end
 
+    def login(provider, data)
+      user, headers = _post_returning_headers("login/#{provider}", data)
+      user['auth_token'] = headers['X-QT-AUTH']
+      user['member'].merge(user.except('member'))
+    end
+
     def forgot_password(member)
       _post("member/forgot-password", member)
     end
@@ -166,20 +172,26 @@ class API
     private
 
     def _post(url_path, body)
+      body, headers = _post_returning_headers(url_path, body)
+
+      body
+    end
+
+    def _post_returning_headers(url_path, body)
       response = @@conn.post(@@api_base + url_path) do |request|
         request.options.timeout = 20
         request.headers['Content-Type'] = 'application/json'
         request.body = body.to_json
       end
 
-      body = JSON.parse(response.body)
-
-      case body
+      body = case body = JSON.parse(response.body)
       when Array
         body.map { |i| keywordize(i) }
       when Object
         keywordize body
       end
+
+      [body, response.headers]
     end
 
     def _get(url_path, *args)
