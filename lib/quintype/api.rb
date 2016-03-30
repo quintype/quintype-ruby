@@ -153,6 +153,10 @@ class API
       user['member'].merge(user.except('member'))
     end
 
+    def logout
+      _get("logout")
+    end
+
     def forgot_password(member)
       _post("member/forgot-password", member)
     end
@@ -196,13 +200,15 @@ class API
 
     def _get(url_path, *args)
       response = @@conn.get(@@api_base + url_path, *args) { |request| request.options.timeout = 20 }
-      body = JSON.parse(response.body)
+      if response.body.present?
+        body = JSON.parse(response.body)
 
-      case body
-      when Array
-        body.map { |i| keywordize(i) }
-      when Object
-        keywordize body
+        case body
+        when Array
+          body.map { |i| keywordize(i) }
+        when Object
+          keywordize body
+        end
       end
     end
 
