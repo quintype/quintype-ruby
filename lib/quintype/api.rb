@@ -82,13 +82,14 @@ class API
       _get("story-collection/find-by-tag", options)
     end
 
-    def post_comment(parent_comment_id, member_id, story_content_id, text)
-      _post("comment", {
-              "parent-comment-id" => parent_comment_id,
-              "member-id"         => member_id,
-              "story-content-id"  => story_content_id,
-              "text"              => text
-            })
+    def post_comment(member_id, story_content_id, text, parent_comment_id=nil)
+      hash = {
+        "member-id"         => member_id.to_i,
+        "story-content-id"  => story_content_id,
+        "text"              => text
+      }
+      hash.merge!("parent-comment-id" => parent_comment_id.to_i) if parent_comment_id
+      _post("comment", hash)
     end
 
     def invite_users(emails, from_email, from_name)
@@ -188,14 +189,16 @@ class API
         request.body = body.to_json
       end
 
-      body = case body = JSON.parse(response.body)
-      when Array
-        body.map { |i| keywordize(i) }
-      when Object
-        keywordize body
-      end
+      if response.body.present?
+        body = case body = JSON.parse(response.body)
+               when Array
+                 body.map { |i| keywordize(i) }
+               when Object
+                 keywordize body
+               end
 
-      [body, response.headers]
+        [body, response.headers]
+      end
     end
 
     def _get(url_path, *args)
