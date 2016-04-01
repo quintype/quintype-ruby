@@ -82,14 +82,13 @@ class API
       _get("story-collection/find-by-tag", options)
     end
 
-    def post_comment(member_id, story_content_id, text, parent_comment_id=nil)
+    def post_comment(story_content_id, text, parent_comment_id=nil, session_cookie)
       hash = {
-        "member-id"         => member_id.to_i,
         "story-content-id"  => story_content_id,
         "text"              => text
       }
       hash.merge!("parent-comment-id" => parent_comment_id.to_i) if parent_comment_id
-      _post("comment", hash)
+      _post("comment", hash, session_cookie)
     end
 
     def invite_users(emails, from_email, from_name)
@@ -176,16 +175,18 @@ class API
 
     private
 
-    def _post(url_path, body)
-      body, headers = _post_returning_headers(url_path, body)
+    def _post(url_path, body, session_cookie=nil)
+      body, headers = _post_returning_headers(url_path, body, session_cookie)
 
       body
     end
 
-    def _post_returning_headers(url_path, body)
+    def _post_returning_headers(url_path, body, session_cookie=nil)
       response = @@conn.post(@@api_base + url_path) do |request|
         request.options.timeout = 20
         request.headers['Content-Type'] = 'application/json'
+        request.headers['X-QT-AUTH'] = session_cookie if session_cookie
+
         request.body = body.to_json
       end
 
