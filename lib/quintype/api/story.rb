@@ -38,6 +38,19 @@ class API
         end
       end
 
+      def find_in_bulk(params)
+        if params.present?
+          params = params.inject({}) do |hash, param|
+            hash[param.first] = param.last.merge(_type: 'stories')
+            hash
+          end
+          response = API.bulk_post(requests: params)
+          response['results']
+        else
+          []
+        end
+      end
+
       def find_by_slug(slug)
         if story = API.story_by_slug(slug).presence
           wrap(story['story'])

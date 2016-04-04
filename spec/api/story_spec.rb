@@ -8,6 +8,15 @@ describe API::Story do
     end
   end
 
+  describe '#find_in_bulk' , :vcr => { cassette_name: "api_story_find_in_bulk" } do
+    it 'finds the stories in bulk for the required params' do
+      stories = described_class.find_in_bulk("Sports" => {section: "Sports", limit: '2'}, "Technology" => {section: "Technology", limit: '2'})
+      expect(stories).to_not be_empty
+      expect(stories['Sports']).to_not be_empty
+      expect(stories['Technology']).to_not be_empty
+    end
+  end
+
   describe '#where' , :vcr => { cassette_name: "api_story_find" } do
     it 'finds the stories for the required params' do
       stories = described_class.where({limit: 1})

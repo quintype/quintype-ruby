@@ -1,0 +1,186 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:8001/api/bulk
+    body:
+      encoding: UTF-8
+      string: '{"requests":{"Sports":{"section":"Sports","limit":"2","_type":"stories"},"Technology":{"section":"Technology","limit":"2","_type":"stories"}}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Jetty(9.3.7.v20160115)
+    body:
+      encoding: UTF-8
+      string: '{"results":{"Sports":[{"updated-at":1455522154946,"assignee-id":46,"author-name":"IANS","tags":[{"id":3389,"name":"Sunil
+        Narine"},{"id":4018,"name":"Kieron Pollard"},{"id":22963,"name":"World T20"},{"id":34504,"name":"Darren
+        Bravo"}],"headline":"After Narine & Pollard, Darren Bravo Pulls Out of WI\u2019s
+        WT20 Squad","storyline-id":1598,"votes":{},"story-content-id":"8709ef59-ece8-4b3f-a981-1be03c05011e","slug":"sports/2016/02/15/after-narine-and-pollard-darren-bravo-pulls-out-of-wis-wt20-squad","last-published-at":1455502356428,"sections":[{"id":13,"name":"Sports"},{"id":62,"name":"Hot
+        Wire"}],"content-created-at":1455502157382,"owner-name":"Mendra Dorjey","custom-slug":null,"push-notification":null,"publisher-id":1,"hero-image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg","focus-point":[1040,330]},"comments":null,"published-at":1455522156428,"storyline-title":"2016
+        World T20","summary":"Reports: Bravo will now play for Trinidad and Tobago
+        Red Force in the regional four-day championship.","autotags":[],"status":"published","bullet-type":"123","id":"8709ef59-ece8-4b3f-a981-1be03c05011e","hero-image-s3-key":"thequint/2016-02/981216f2-5712-4176-bfc4-fe785a0feec8/e-RTR334FD.jpg","cards":[{"story-elements":[{"description":"","page-url":"/story/8709ef59-ece8-4b3f-a981-1be03c05011e/element/14944a07-b694-4414-b588-4fb192f980e3","type":"text","family-id":"63ff86ad-7981-460f-852f-260e01d3bbb9","title":"","id":"14944a07-b694-4414-b588-4fb192f980e3","metadata":{},"subtype":null,"text":"<p>Left-hander
+        Darren Bravo has become the third West Indies cricketer to pull out of the
+        troubled Twenty20 World Cup squad.<br><br>Following the high-profile withdrawals
+        of Kieron Pollard and Sunil Narine last week, the West Indies Cricket Board
+        (WICB) announced that Bravo also has opted out of the squad in order to be
+        available for Trinidad and Tobago Red Force in the regional four-day championship,
+        reports CMC.<br><br>In a letter sent to the WICB, Bravo said while he was
+        \u201Cvery grateful and humbled\u201D to be selected, he preferred to focus
+        on developing his game in the longest format.<br><br>Selectors will now mull
+        over yet another replacement after having to find alternatives for Pollard
+        and Narine.<br><br>All-rounder Carlos Brathwaite was named to replace Pollard
+        and the board said that Barbados off-spinner Ashley Nurse has been chosen
+        in Narine\u2019s absence.<br><br>Nurse has played four Twenty20s for the West
+        Indies and 60 overall.<br><br>The T20 World Cup begins on March 8 in India.<br></p>"}],"card-updated-at":1455522153545,"content-version-id":"b8b17a54-5760-4782-a72a-e0a1b0ff1dc3","card-added-at":1455521959032,"status":"draft","id":"a9fd9849-9991-466b-b9de-4d6804446062","content-id":"a9fd9849-9991-466b-b9de-4d6804446062","version":2}],"story-version-id":"c4c24433-2db7-495c-a6e5-827fd8e74bb6","content-updated-at":1455502356684,"author-id":12555,"owner-id":46,"access":null,"first-published-at":1455502356428,"hero-image-caption":"File
+        picture of Darren Bravo and Sunil Narine. (Photo: Reuters)","version":2,"story-template":null,"created-at":1455522153524,"authors":[{"updated-at":1449287560112,"email":"ians@email.com","slug":"ians","last-name":null,"publisher-id":1,"name":"IANS","avatar-url":null,"first-name":null,"id":12555,"created-at":1449287560112}],"metadata":{},"publish-at":null,"assignee-name":"Mendra
+        Dorjey"},{"updated-at":1455526447004,"assignee-id":46,"author-name":"Reuters","tags":[{"id":3257,"name":"NBA"},{"id":3258,"name":"Basketball"},{"id":18437,"name":"Kobe
+        Bryant"},{"id":34513,"name":"NBA All-Stars Game"}],"headline":"In Pics: A
+        Kobe Kind of Day at the NBA All-Stars Game in Toronto","storyline-id":null,"votes":{},"story-content-id":"f4608c68-0ab1-49cc-bfea-9ba1cd8c884d","slug":"sports/2016/02/15/in-pics-a-kobe-kind-of-day-at-the-nba-all-stars-game-in-toronto","last-published-at":1455506647669,"sections":[{"id":13,"name":"Sports"}],"content-created-at":1455503489651,"owner-name":"Mendra
+        Dorjey","custom-slug":null,"push-notification":null,"publisher-id":1,"hero-image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg","focus-point":[1651,559]},"comments":null,"published-at":1455526447669,"storyline-title":null,"summary":"LA
+        Lakers\u2019 Kobe Bryant announced last November that this would be his final
+        season.","autotags":[],"status":"published","bullet-type":"123","id":"f4608c68-0ab1-49cc-bfea-9ba1cd8c884d","hero-image-s3-key":"thequint/2016-02/1964b8ed-c90a-44b6-afe1-4eb0da4af23e/e-All-Star-Game-Basketb_Webf-(6).jpg","cards":[{"story-elements":[{"description":"","page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/9f341dd3-8864-47e1-86b2-a96ca8d5e93b","type":"text","family-id":"32e71be7-51e7-41af-8ac7-adbec2e7b232","title":"","id":"9f341dd3-8864-47e1-86b2-a96ca8d5e93b","metadata":{},"subtype":null,"text":"<p>
+        Kobe Bryant made the biggest stop of his farewell tour on Sunday as he played
+        the last NBA All-Star Game of a remarkable career in which he established
+        himself as arguably the best player of his generation.</p><p>Bryant, who said
+        all week he did not want his fellow players to go easy on him in his final
+        All-Star Game, was a shadow of the player who dominated the NBA\u2019s midseason
+        showcase many times before, but was still the man of the hour.</p>"},{"description":"","image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg"},"page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/29ff8551-eb8f-49b3-a3ab-0418d71005e0","type":"image","family-id":"7d9fc40b-170a-4958-a967-2f97d0d9a24a","title":"Kobe
+        Bryant hugs Magic Johnson as he is introduced before the first half of the
+        NBA all-star game. (Photo: AP)","id":"29ff8551-eb8f-49b3-a3ab-0418d71005e0","image-s3-key":"thequint/2016-02/f27bca64-4d2f-429f-9ed7-a08e9e8a6377/e-All-Star-Game-Basketb_Webf.jpg","metadata":{},"subtype":null},{"description":"","image-metadata":{"width":2000,"height":2703,"mime-type":"image/jpeg"},"page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/1e08d287-9114-47ba-a552-95fb724cd874","type":"image","family-id":"bf6f0c0d-8b0e-411c-9d49-b15914ba9331","title":"(Photo:
+        AP)","id":"1e08d287-9114-47ba-a552-95fb724cd874","image-s3-key":"thequint/2016-02/0af5d314-2a2c-48ce-bee9-3ae3f07eca32/ee-All-Star-Game-Basketb_Webf.jpg","metadata":{},"subtype":null},{"description":"","page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/7c62a61c-593a-4a53-b2f6-6dd160c6e364","type":"text","family-id":"e6dbded5-5c7f-45d7-b9d2-03d61f2fec67","title":"","id":"7c62a61c-593a-4a53-b2f6-6dd160c6e364","metadata":{},"subtype":null,"text":"<p>Prior
+        to the game\u2019s opening tip, NBA great Magic Johnson lauded the 37-year-old
+        in between a pair of tribute videos featuring some career highlights interspersed
+        with messages of thanks from a handful of fellow NBA players.</p><p>Bryant
+        announced last November that this would be his final season and was made the
+        leading vote-getter for his 18th and final All-Star appearance by fans.</p>"},{"description":"","page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/9ac56656-5f6e-455f-92d5-4916fd1d95a2","type":"text","family-id":"21f0a2e7-5d32-4185-a872-a6161b3a0199","title":"","id":"9ac56656-5f6e-455f-92d5-4916fd1d95a2","metadata":{"content":"I
+        just want to thank you guys for all of your support for all these years. I\u2019ve
+        been extremely fortunate to be able to play the game that I love and be in
+        the NBA for more than half my life. It\u2019s a thrill to be here in this
+        All-Star Game so thank you for voting me in.","attribution":"Kobe Bryant"},"subtype":"quote","text":"<div><blockquote>I
+        just want to thank you guys for all of your support for all these years. I\u2019ve
+        been extremely fortunate to be able to play the game that I love and be in
+        the NBA for more than half my life. It\u2019s a thrill to be here in this
+        All-Star Game so thank you for voting me in.</blockquote><span class=\"attribution\">Kobe
+        Bryant</span></div>"},{"description":"","image-metadata":{"width":2000,"height":2719,"mime-type":"image/jpeg"},"page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/085b62fb-665f-42ee-82f9-33e8bdc7468e","type":"image","family-id":"0b197828-aa4c-4d26-91a6-8331d2b6a398","title":"Kobe
+        Bryant and his daughter. (Photo: AP)","id":"085b62fb-665f-42ee-82f9-33e8bdc7468e","image-s3-key":"thequint/2016-02/876c6327-285d-47da-8452-e18cd5969975/eeee-All-Star-Game-Basketb_Webf-(4).jpg","metadata":{},"subtype":null},{"description":"","page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/e93670ce-851b-4255-9414-a34c08d900cc","type":"text","family-id":"635983d0-108f-44c7-92fe-0a5495c503e0","title":"","id":"e93670ce-851b-4255-9414-a34c08d900cc","metadata":{},"subtype":null,"text":"<p>When
+        the first NBA All-Star Game to be held outside of the United States finally
+        got underway, it was Bryant who went up against LeBron James for the opening
+        tip. James won the tip but appeared to send it over to Bryant\u2018s Western
+        Conference team.<br></p><p>Bryant played nearly 15 minutes in the first half
+        and scored 10 points, including a patented fadeaway late in the opening quarter
+        that drew loud cheers from a celebrity-dotted crowd that included director
+        Spike Lee and supermodel Kate Upton.</p><p>The 20-year NBA veteran, who by
+        his own admission this week is \u201Cold as hell,\u201D was held without a
+        point the rest of the way.</p>"},{"description":"","page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/96aa28c1-2dc9-40cf-95d4-cfab56300172","type":"text","family-id":"9f196c53-49f6-42fe-8dd3-c28b5fa1798c","title":"","id":"96aa28c1-2dc9-40cf-95d4-cfab56300172","metadata":{"content":"
+        I get a chance to be around these young players here, who when I first started
+        playing most of them were my kids\u2019 age now. It feels so good to be able
+        to speak to them about the game and to be able to share some of the knowledge
+        that I have learned throughout my career to them so that they can carry on
+        the tradition of the NBA and hopefully play 20 years themselves."},"subtype":"blockquote","text":"<div><blockquote>
+        I get a chance to be around these young players here, who when I first started
+        playing most of them were my kids\u2019 age now. It feels so good to be able
+        to speak to them about the game and to be able to share some of the knowledge
+        that I have learned throughout my career to them so that they can carry on
+        the tradition of the NBA and hopefully play 20 years themselves.</blockquote><span
+        class=\"attribution\"></span></div>"},{"description":"","image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg"},"page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/47de8e14-3f25-42b7-90c3-544e1dbf5aac","type":"image","family-id":"3a59b84c-d524-4a99-a45d-ce565ea6b050","title":"(Photo:
+        AP)","id":"47de8e14-3f25-42b7-90c3-544e1dbf5aac","image-s3-key":"thequint/2016-02/7720395b-ab2c-4815-9bb5-61d735ec99fc/e-All-Star-Game-Basketb_Webf-(3).jpg","metadata":{},"subtype":null},{"description":"","image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg"},"page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/f0ee3211-83e9-4f02-8c11-bff9712130bd","type":"image","family-id":"b2a97388-3a45-4de5-a70e-92fc463484f8","title":"(Photo:
+        AP)","id":"f0ee3211-83e9-4f02-8c11-bff9712130bd","image-s3-key":"thequint/2016-02/8adc57fb-99c9-4653-8263-c5cebc3f3280/ee.jpg","metadata":{},"subtype":null},{"description":"","page-url":"/story/f4608c68-0ab1-49cc-bfea-9ba1cd8c884d/element/15da14dd-6161-438f-9cbe-095b3765abbf","type":"text","family-id":"a246618f-1db2-48f5-9e1d-954123d7c6ee","title":"","id":"15da14dd-6161-438f-9cbe-095b3765abbf","metadata":{},"subtype":null,"text":"<p>When
+        Bryant, a five-time NBA champion, two-time NBA Finals MVP, one-time league
+        MVP and four-time All-Star Game MVP during a career spent entirely with the
+        Los Angeles Lakers, checked out of the game with 66 seconds left, he received
+        a standing ovation from both team benches while the crowd chanted \u201CKobe,
+        Kobe.\u201D</p><p>Russell Westbrook of the Oklahoma City Thunder was named
+        the game\u2019s Most Valuable Player for a second consecutive year after leading
+        the Western Conference with 31 points in a 196-173 win that set a record for
+        combined points in an NBA All-Star Game. (Editing by Peter Rutherford)pi</p>"}],"card-updated-at":1455526339617,"content-version-id":"6ea9a3ee-63c2-4066-8989-0d8bcc58a9fe","card-added-at":1455523289655,"status":"draft","id":"ff0d7b19-492c-48ec-bf65-0ade96aea322","content-id":"ff0d7b19-492c-48ec-bf65-0ade96aea322","version":12}],"story-version-id":"9359528d-3fc8-4716-b007-ac21ff0cd319","content-updated-at":1455506647978,"author-id":18,"owner-id":46,"access":null,"first-published-at":1455506647669,"hero-image-caption":"Kobe
+        Bryant speaks after being introduced before the first half of the NBA all-star
+        basketball game. (Photo: AP)<a></a>","version":19,"story-template":null,"created-at":1455526447004,"authors":[{"updated-at":1446033586826,"email":"teamquint+reuters@thequint.com","slug":"reuters","last-name":null,"publisher-id":1,"name":"Reuters","avatar-url":null,"first-name":null,"id":18,"created-at":1446033586826}],"metadata":{},"publish-at":null,"assignee-name":"Mendra
+        Dorjey"}],"Technology":[{"updated-at":1455519213897,"assignee-id":281,"author-name":"Siddhartha
+        Sharma","tags":[{"id":3828,"name":"Tech News"},{"id":5181,"name":"Apple inc"},{"id":16596,"name":"Apple
+        iPhone 6S"},{"id":17138,"name":"Apple iPhone 6S Plus"},{"id":27455,"name":"Apple
+        iPhone 5s"},{"id":34494,"name":"Apple iPhone 5SE"},{"id":34495,"name":"Apple
+        iPad Air 3"}],"headline":"Apple All Set for  iPhone 5SE and iPad Air 3 Launch
+        on March 15","storyline-id":null,"votes":{},"story-content-id":"9631ca25-ea83-4872-b284-269eaf9cfa36","slug":"technology/2016/02/15/apple-new-iphone-5se-along-with-the-new-ipad-air-3-to-launch-on-15-march-and-will-go-on-sale-on-18-march-2016","last-published-at":1455499415530,"sections":[{"id":14,"name":"Technology"}],"content-created-at":1455498389548,"owner-name":"Siddhartha
+        Sharma","custom-slug":"apple-new-iphone-5se-along-with-the-new-ipad-air-3-to-launch-on-15-march-and-will-go-on-sale-on-18-march-2016","push-notification":null,"publisher-id":1,"hero-image-metadata":{"width":1280,"height":720},"comments":null,"published-at":1455519215530,"storyline-title":null,"summary":"Apple
+        will  launch its iPhone 5SE along with the new iPad Air 3  on  March 15 that
+        will go on sale on  March 18, 2016","autotags":[],"status":"published","bullet-type":"123","id":"9631ca25-ea83-4872-b284-269eaf9cfa36","hero-image-s3-key":"thequint/2016-01/1c265b97-7c53-45b2-a108-72d97ee6e827/iphone.jpg","cards":[{"story-elements":[{"description":"","page-url":"/story/9631ca25-ea83-4872-b284-269eaf9cfa36/element/99629990-18a9-4b36-8025-45147e484082","type":"text","family-id":"f6042e31-fc65-47a8-b561-a37d77f0341f","title":"","id":"99629990-18a9-4b36-8025-45147e484082","metadata":{},"subtype":null,"text":"<p>After
+        seeing the decline in sales of their latest iPhone 6s and 6s Plus, Apple has
+        gone  back to the drawing board and  found an easy fix. </p><p>The company
+        is all set to launch the Apple iPhone 5SE. This is a 4-inch, affordable version
+        of the iPhone.</p><p>The company is all set to announce the new iPhone 5SE
+        along with the new iPad Air 3 on March 15. Both the devices will go on sale
+        on March 18, 2016, according to a <a href=\"http://9to5mac.com/2016/02/12/iphone-5se-ipad-air-3-march-18/\">report
+        on 9To5Mac</a>. </p><p>Apple <a href=\"http://www.thequint.com/technology/2015/10/05/first-impressions-apple-iphone-6s-the-64gb-rose-gold-beauty\">iPhone
+        6s </a>and <a href=\"http://www.thequint.com/technology/2015/11/03/review-apple-iphone-6s-plus-is-the-best-way-to-burn-your-money\">6s
+        Plus</a> sales are slowing world over. The sale of the new iPhones did not
+        even dominate the overall smartphones sales as compared to their predecessors.</p><p>The
+        current mix of <a href=\"http://www.thequint.com/technology/2015/10/06/watch-is-the-apple-iphone-6s-actually-better-than-the-iphone-6\">iPhones</a>
+        don\u2019t even have much difference to offer to the consumers. The iPhone
+        5SE is an upgrade to the iPhone 5s.</p><p>It will have an 8-megapixel rear
+        camera, 1.2-megapixel front camera, NFC for Apple Pay, A8 processor and improved
+        connectivity. The phone might also have a design makeover with curved glass
+        edges similar to the Samsung Galaxy S6 edge and edge+.</p><p>Now only time
+        would tell whether this new iPhone will turn the fortunes around for Apple
+        in 2016. </p>"}],"card-updated-at":1455519053600,"content-version-id":"7afcb074-d2ab-4f35-ac2a-49accf1f0171","card-added-at":1455518337960,"status":"draft","id":"3407c240-9988-4a43-9886-3b1158c81c5b","content-id":"3407c240-9988-4a43-9886-3b1158c81c5b","version":9}],"story-version-id":"bd8a3c35-eb46-4e13-bcc0-82cab8a47087","content-updated-at":1455499415937,"author-id":281,"owner-id":281,"access":null,"first-published-at":1455499415530,"hero-image-caption":"Apple\u2019s
+        new iPhone 5SE will be announced on March 15 and will go on sale on March
+        18, 2016. (Photo: <b>The Quint</b>)","version":23,"story-template":null,"created-at":1455519212822,"authors":null,"metadata":{},"publish-at":null,"assignee-name":"Siddhartha
+        Sharma"},{"updated-at":1455513932541,"assignee-id":281,"author-name":"IANS","tags":[{"id":3828,"name":"Tech
+        News"},{"id":7630,"name":"flying drones"},{"id":25234,"name":"Parrot Drones"},{"id":34486,"name":"Drone
+        Racing League"}],"headline":"Move Over Formula 1 \u2013 Drone Racing Is the
+        New Sport of Future","storyline-id":null,"votes":{},"story-content-id":"8ff15e2f-e9ce-4740-96f4-e91ded0ea28b","slug":"technology/2016/02/14/move-over-formula-1-drone-racing-is-the-new-sport-of-future","last-published-at":1455494134191,"sections":[{"id":14,"name":"Technology"},{"id":97,"name":"TorQue"},{"id":13,"name":"Sports"}],"content-created-at":1455492267622,"owner-name":"Siddhartha
+        Sharma","custom-slug":null,"push-notification":null,"publisher-id":1,"hero-image-metadata":{"width":2000,"height":1125,"mime-type":"image/jpeg","focus-point":[437,721]},"comments":null,"published-at":1455513934191,"storyline-title":null,"summary":"The
+        Drone Racing League is the new sport to watch out for in 2016.","autotags":[],"status":"published","bullet-type":"123","id":"8ff15e2f-e9ce-4740-96f4-e91ded0ea28b","hero-image-s3-key":"thequint/2016-02/dbcf9819-47cc-461b-9174-dd7d02f0c4d8/Netherlands-Eagles-Vs_Webf.jpg","cards":[{"story-elements":[{"description":"","page-url":"/story/8ff15e2f-e9ce-4740-96f4-e91ded0ea28b/element/718bf23e-a535-4af7-a6d4-f964cbe84892","type":"text","family-id":"4312fc9c-f34a-4ce8-b568-9455772660db","title":"","id":"718bf23e-a535-4af7-a6d4-f964cbe84892","metadata":{},"subtype":null,"text":"<p>Be
+        it in the field of security or improved studies of land and atmosphere, drones
+        have proved their mettle in every way, and with advancements in technology
+        they can now be pitted against one another in a race.</p><p>\u201CThere has
+        been  growing excitement around the prospect of a new sporting league where
+        competitors race that very futuristic sounding vehicle \u2013 a drone,\u201D
+        a report on The Verge said on Saturday.<br></p><p>A drone is a remote-controlled,
+        incredibly agile, little flying machine that can move at speeds of over 160
+        km an hour, and unlike most racing sports \u2013 cars, horses, dog sleds \u2013
+        would have no human on board.<br></p><p>The \u201Cpilots\u201D stand with
+        goggles on and control the drone based on a live video feed from a camera
+        on the drone\u2019s nose. This is called first person view racing.</p>"}],"card-updated-at":1455513907319,"content-version-id":"aee268c4-85ac-4e18-a59d-efcbda8adf50","card-added-at":1455512067625,"status":"draft","id":"7b82ed0f-5ee9-47ae-aee5-b0622160e31b","content-id":"7b82ed0f-5ee9-47ae-aee5-b0622160e31b","version":3},{"story-elements":[{"description":"","page-url":"/story/8ff15e2f-e9ce-4740-96f4-e91ded0ea28b/element/bea9de10-4c27-45aa-8f20-2d73c74bebd0","type":"text","family-id":"0f5565f9-fb4b-47d9-b474-e55ba812474e","title":"","id":"bea9de10-4c27-45aa-8f20-2d73c74bebd0","metadata":{},"subtype":null,"text":"<p><b>Also
+        Read: </b><a href=\"http://www.thequint.com/technology/2016/02/12/smart-drones-can-help-search-for-people-lost-in-the-wild\">Smart
+        Drones Can Help Search for People Lost in the Wild</a></p>"}],"card-updated-at":1455512161925,"content-version-id":"57421b48-fb7e-43c4-984f-20ee65011530","card-added-at":1455512128910,"status":"draft","id":"8dd5ae21-32b6-4a91-b193-3663b22afb06","content-id":"8dd5ae21-32b6-4a91-b193-3663b22afb06","version":2},{"story-elements":[{"description":"","page-url":"/story/8ff15e2f-e9ce-4740-96f4-e91ded0ea28b/element/76acc60c-36ea-41ae-9af4-486248707842","type":"youtube-video","family-id":"909b52fa-515f-436d-8117-0c118cd25a98","title":"","id":"76acc60c-36ea-41ae-9af4-486248707842","url":"https://www.youtube.com/watch?v=NNrwLSv7MHc","embed-url":"http://www.youtube.com/embed/NNrwLSv7MHc","metadata":{},"subtype":null}],"card-updated-at":1455512204296,"content-version-id":"11280a2d-20c7-4dc3-a177-85565269d734","card-added-at":1455512128910,"status":"draft","id":"c649d503-0df9-4fb8-b9a5-93107ac12078","content-id":"c649d503-0df9-4fb8-b9a5-93107ac12078","version":2},{"story-elements":[{"description":"","page-url":"/story/8ff15e2f-e9ce-4740-96f4-e91ded0ea28b/element/1e8629ca-0645-44ca-b321-d6a9f845dd33","type":"text","family-id":"5fab1229-ac37-4188-9888-52fdfe25342f","title":"","id":"1e8629ca-0645-44ca-b321-d6a9f845dd33","metadata":{},"subtype":null,"text":"<p>But
+        what is so different about it? Besides the fact that drone-racing poses no
+        risk to humans, the developers do a mix of first and third-person views to
+        grab eyeballs.</p><p>\u201CThis means that sometimes you are watching from
+        the perspective of the drone, zipping through turns and blasting along straight
+        ways while other times you are watching from the sidelines as the drones whiz
+        by,\u201D the report said.<br></p><p>To add to the excitement and make them
+        visible against a background at high speed, the US-based Drone Racing League
+        covered each drone in colourful LED lights and matching rotors.<br></p><p>\u201CThey
+        also introduced a lot of crazy atmospheric elements \u2013 drones crashing
+        through glass lightbulbs! Drones rising through thick fog! Drones chopping
+        up innocent plants! \u2013 which work well in an edited montage, but might
+        not pan out in an actual race,\u201D the report said.</p><p>The pre-season
+        of the league was held on July 11, 2015, and the Level 1 round will be held
+        on February 22, 2016.</p>"}],"card-updated-at":1455513907319,"content-version-id":"25e74ffe-6399-4c29-bd4c-cde84a83ee36","card-added-at":1455512128910,"status":"draft","id":"ee42c039-16df-48d7-9516-027e1c6e669d","content-id":"ee42c039-16df-48d7-9516-027e1c6e669d","version":2}],"story-version-id":"e6894077-fe37-49ef-a006-42dc9b31aba2","content-updated-at":1455494134617,"author-id":12555,"owner-id":281,"access":null,"first-published-at":1455494134191,"hero-image-caption":"A
+        trained eagle is about to put its claws into a flying drone. Dutch Police
+        are working with a The Hague-based company that trains eagles and other birds
+        to swoop down on small drones and grasp them in their talons in restricted
+        areas or where they are banned, such as at large outdoor events.  (Photo:
+        AP)   ","version":18,"story-template":null,"created-at":1455513925909,"authors":[{"updated-at":1449287560112,"email":"ians@email.com","slug":"ians","last-name":null,"publisher-id":1,"name":"IANS","avatar-url":null,"first-name":null,"id":12555,"created-at":1449287560112}],"metadata":{},"publish-at":null,"assignee-name":"Siddhartha
+        Sharma"}]}}'
+    http_version: 
+  recorded_at: Mon, 04 Apr 2016 17:05:19 GMT
+recorded_with: VCR 3.0.1
