@@ -17,12 +17,12 @@ class API
         if params['ids'].kind_of? Array
           params['ids'] = params['ids'].join ","
         end
-        authors = API.authors(params['ids'])
+        authors = API.authors(params)
         wrap_all(authors)
       end
 
       def find(params)
-        if authors = API.authors(params).presence
+        if authors = API.authors({ids: params}).presence
           author = authors.first
           wrap(author)
         end

@@ -107,8 +107,8 @@ class API
       _post("emails/unsubscribe", params)
     end
 
-    def authors(author_ids)
-      _get("authors", { ids: author_ids })
+    def authors(params)
+      _get("authors", params)
     end
 
     def author_profile(author_id)
