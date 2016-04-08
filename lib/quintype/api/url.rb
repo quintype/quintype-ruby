@@ -5,6 +5,10 @@ class API
         "/" + story['slug']
       end
 
+      def story_canonical(root, story)
+        root + story['slug']
+      end
+
       def topic (tag_name)
         "/topic/" + encode_uri_component(tag_name)
       end
