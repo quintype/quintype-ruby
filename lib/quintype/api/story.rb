@@ -78,7 +78,8 @@ class API
 
     def to_h(config={})
       hash = story.merge({
-        'url' => add_url,
+        'url' => URL.story(story),
+        'canonical_url' => URL.story_canonical(config['root_url'], story),
         'time_in_minutes' => time_in_minutes,
         'tags' => add_urls_to_tags
       })
@@ -109,10 +110,6 @@ class API
       else
         story['tags']
       end
-    end
-
-    def add_url
-      URL.story(story)
     end
   end
 end
