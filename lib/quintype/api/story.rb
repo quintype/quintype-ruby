@@ -93,9 +93,9 @@ class API
         if alternative_props.present?
           hash.merge!('headline' => (alternative_props['headline'].presence || story['headline']))
           if alternative_props['hero_image'].present?
-            hash.merge!('hero_image_s3_key' => (alternative_props['hero_image']['hero_image_s3_key'].presence || story['hero_image_s3_key']),
-                      'hero_image_metadata' => (alternative_props['hero_image']['hero_image_metadata'].presence || story['hero_image_metadata']),
-                      'hero_image_caption' => (alternative_props['hero_image']['hero_image_caption'].presence || story['hero_image_caption']))
+            hash.merge!('hero_image_s3_key' => (alternative_props['hero_image']['hero_image_s3_key']),
+                      'hero_image_metadata' => (alternative_props['hero_image']['hero_image_metadata']),
+                      'hero_image_caption' => (alternative_props['hero_image']['hero_image_caption']))
           end
         end
       end
