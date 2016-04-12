@@ -88,7 +88,7 @@ describe API::Story do
       config = API.config
       stories = described_class.where({limit: 1})
       story = stories.first.story
-      serialized_story = stories.first.to_h(config)
+      serialized_story = stories.first.to_h(config.merge('root_url' => 'http://something.com'))
 
       expect(story['sections'].first.keys).to_not include("display_name")
       expect(story['sections'].first).to eq({"id"=>5, "name"=>"India"})
@@ -97,6 +97,18 @@ describe API::Story do
       expect(serialized_story['tags'].first.keys).to include("url")
       expect(serialized_story['sections'].first).to eq({"id"=>5, "name"=>"India", "display_name"=>"India"})
       expect(serialized_story['tags'].first).to eq({"id"=>1821, "name"=>"Afzal Guru", "url"=>"/topic/Afzal%20Guru"})
+    end
+
+    it 'serializes alternate information correctly', :vcr => { cassette_name: "api_story_alternative"} do
+      config = API.config
+      stories = described_class.where({limit: 1})
+      story = stories.first.story
+      serialized_story = stories.first.to_h(config.merge('root_url' => 'http://something.com'), 'home')
+
+      expect(serialized_story['headline']).to eq 'alternative headline'
+      expect(serialized_story['hero_image_s3_key']).to eq 'local_thequint/2016-04/ea79ecf5-d6de-44b7-8cbc-357bbab64d94/BOqr2ncH_bigger.png'
+      expect(serialized_story['hero_image_metadata']).to eq ({"width"=>73, "height"=>73, "mime_type"=>"image/png", "focus_point"=>[34, 44]})
+      expect(serialized_story['hero_image_caption']).to eq 'hey this is the alternative image caption'
     end
   end
 end

@@ -76,15 +76,28 @@ class API
       @cards = story['cards'] || []
     end
 
-    def to_h(config={})
+    def to_h(config={}, page_type=nil)
       hash = story.merge({
         'url' => URL.story(story),
-        'canonical_url' => URL.story_canonical(config['root_url'], story),
         'time_in_minutes' => time_in_minutes,
         'tags' => add_urls_to_tags
       })
       if config.present?
-        hash.merge!({ 'sections' => add_display_names_to_sections(config) })
+        hash.merge!({
+          'sections' => add_display_names_to_sections(config),
+          'canonical_url' => URL.story_canonical(config['root_url'], story),
+        })
+      end
+      if story['alternative'].present? && page_type
+        alternative_props = story['alternative'][page_type]['default']
+        if alternative_props.present?
+          hash.merge!('headline' => (alternative_props['headline'].presence || story['headline']))
+          if alternative_props['hero_image'].present?
+            hash.merge!('hero_image_s3_key' => (alternative_props['hero_image']['hero_image_s3_key']),
+                      'hero_image_metadata' => (alternative_props['hero_image']['hero_image_metadata']),
+                      'hero_image_caption' => (alternative_props['hero_image']['hero_image_caption']))
+          end
+        end
       end
       hash
     end
