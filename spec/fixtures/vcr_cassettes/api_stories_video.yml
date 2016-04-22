@@ -18,8 +18,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 24 Mar 2016 11:56:20 GMT
       Access-Control-Allow-Origin:
       - "*"
       Content-Type:
@@ -27,9 +25,9 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Server:
-      - Jetty(9.2.10.v20150310)
+      - Jetty(9.3.7.v20160115)
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"stories":[{"hero-image-s3-key":"thequint/2016-02/dc8ceb0b-5672-4989-bfc4-737b3b7ab59e/BMW-X1.jpg","hero-image-metadata":{"width":2000,"height":1126,"mime-type":"image/jpeg","focus-point":[885,643]},"hero-image-caption":"BMW
         X1 M Sport badge. (Photo: <b>The Quint</b>)","headline":"First Look: BMW X1
         M Sport at the Delhi Auto Expo 2016","slug":"delhi-auto-expo-2016/2016/02/15/first-look-bmw-x1-m-sport-at-the-delhi-auto-expo-2016"},{"hero-image-s3-key":"thequint/2016-02/dfa584ef-62fb-4836-b974-2cfaaf6012f7/PANADA
@@ -65,5 +63,5 @@ http_interactions:
         telling, if it doesn\u2019t have a villain.","headline":"Only  a Villain Can
         Add Some Real Tadka to a Story: Raza Murad","slug":"entertainment/2016/02/13/only-a-villain-can-add-some-real-tadka-to-a-story-raza-murad"}]}'
     http_version: 
-  recorded_at: Thu, 24 Mar 2016 11:56:20 GMT
+  recorded_at: Fri, 22 Apr 2016 03:29:53 GMT
 recorded_with: VCR 3.0.1

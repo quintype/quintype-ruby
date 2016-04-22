@@ -30,11 +30,12 @@ class API
 
       def find_by_stacks(stacks, options={})
         if stacks.present?
-          stacks.inject({}) do |hash, stack|
-            stories = where({ 'story-group' => stack['story_group']}.merge(options)) || []
-            hash[stack['story_group']] = stories
+          requests = stacks.inject({}) do |hash, stack|
+            hash[stack['story_group']] = { 'story_group' => stack['story_group']}.merge(options)
             hash
           end
+
+          find_in_bulk(requests)
         end
       end
 
@@ -79,12 +80,13 @@ class API
     def to_h(config={})
       hash = story.merge({
         'url' => URL.story(story),
-        'canonical_url' => URL.story_canonical(config['root_url'], story),
         'time_in_minutes' => time_in_minutes,
         'tags' => add_urls_to_tags
       })
       if config.present?
-        hash.merge!({ 'sections' => add_display_names_to_sections(config) })
+        hash.merge!({ 'sections' => add_display_names_to_sections(config),
+                      'canonical_url' => URL.story_canonical(config['root_url'], story)
+                    })
       end
       hash
     end

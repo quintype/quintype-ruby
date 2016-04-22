@@ -51,7 +51,7 @@ describe API::Story do
     it 'gives stories for stacks' , :vcr => { cassette_name: "api_story_find_by_stacks" } do
       config = API.config
       stacks_stories = described_class.find_by_stacks(config['layout']['stacks'])
-      stack_names = config['layout']['stacks'].map { |s| s['story_group'] }
+      stack_names = config['layout']['stacks'].map { |s| s['story_group'].gsub('-','_') }
       expect(stacks_stories.keys).to eq(stack_names)
       stacks_stories.each_pair do |story_group, stories|
         expect(stories.count).to be > 0
@@ -61,7 +61,7 @@ describe API::Story do
     it 'gives stories for stacks for a params passed', :vcr => { cassette_name: "api_story_find_by_stacks_and_sections" } do
       config = API.config
       stacks_stories = described_class.find_by_stacks(config['layout']['stacks'], {'section' => 'India'})
-      stack_names = config['layout']['stacks'].map { |s| s['story_group'] }
+      stack_names = config['layout']['stacks'].map { |s| s['story_group'].gsub('-','_') }
       expect(stacks_stories.keys).to eq(stack_names)
       stacks_stories.each_pair do |story_group, stories|
         expect(stories.count).to be > 0
@@ -88,7 +88,7 @@ describe API::Story do
       config = API.config
       stories = described_class.where({limit: 1})
       story = stories.first.story
-      serialized_story = stories.first.to_h(config)
+      serialized_story = stories.first.to_h(config.merge('root_url' => 'http://example.com'))
 
       expect(story['sections'].first.keys).to_not include("display_name")
       expect(story['sections'].first).to eq({"id"=>5, "name"=>"India"})
