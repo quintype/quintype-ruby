@@ -203,7 +203,7 @@ class API
     end
 
     def _get(url_path, *args)
-      response = @@conn.get(@@api_base + url_path, *args) { |request| request.options.timeout = 0.5 }
+      response = @@conn.get(@@api_base + url_path, *args) { |request| request.options.timeout = 2.5 }
       if response.body.present?
         body = JSON.parse(response.body)
 
