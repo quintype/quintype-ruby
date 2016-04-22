@@ -6,7 +6,7 @@ require 'active_support/all'
 require_relative './api/story'
 require_relative './api/stack'
 require_relative './api/url'
-
+require 'faraday/adapter/manticore'
 
 class API
   class << self
@@ -14,8 +14,7 @@ class API
       @@host = host
       @@api_base = host + '/api/'
       @@conn = Faraday.new(url: host) do |faraday|
-        faraday.response :logger
-        faraday.adapter  Faraday.default_adapter
+        faraday.adapter :manticore
       end
     end
 
@@ -183,7 +182,7 @@ class API
 
     def _post_returning_headers(url_path, body, session_cookie=nil)
       response = @@conn.post(@@api_base + url_path) do |request|
-        request.options.timeout = 0.5
+        request.options.timeout = 10
         request.headers['Content-Type'] = 'application/json'
         request.headers['X-QT-AUTH'] = session_cookie if session_cookie
 
@@ -203,7 +202,7 @@ class API
     end
 
     def _get(url_path, *args)
-      response = @@conn.get(@@api_base + url_path, *args) { |request| request.options.timeout = 0.5 }
+      response = @@conn.get(@@api_base + url_path, *args) { |request| request.options.timeout = 10 }
       if response.body.present?
         body = JSON.parse(response.body)
 
