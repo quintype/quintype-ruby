@@ -31,11 +31,13 @@ class API
       def find_by_stacks(stacks, options={})
         if stacks.present?
           requests = stacks.inject({}) do |hash, stack|
-            hash[stack['story_group']] = { 'story_group' => stack['story_group']}.merge(options)
+            options.reject! {|k,v| k == 'section' }
+            hash[stack['story_group']] = { 'story_group' => stack['story_group'] }.merge(options)
             hash
           end
 
-          find_in_bulk(requests)
+          stories = find_in_bulk(requests)
+          stories
         end
       end
 
