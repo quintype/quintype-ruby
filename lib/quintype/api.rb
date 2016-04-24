@@ -6,16 +6,13 @@ require 'active_support/all'
 require_relative './api/story'
 require_relative './api/stack'
 require_relative './api/url'
-require 'faraday/adapter/manticore'
 
 class API
   class << self
-    def establish_connection(host)
+    def establish_connection(host, conn = Faraday.new(url: host))
       @@host = host
       @@api_base = host + '/api/'
-      @@conn = Faraday.new(url: host) do |faraday|
-        faraday.adapter :manticore
-      end
+      @@conn = conn
     end
 
     def conn
