@@ -179,8 +179,6 @@ class API
 
     def _post_returning_headers(url_path, body, session_cookie=nil)
       response = @@conn.post(@@api_base + url_path) do |request|
-        request.options.timeout = 2.5
-        request.options.open_timeout = 1
         request.headers['Content-Type'] = 'application/json'
         request.headers['X-QT-AUTH'] = session_cookie if session_cookie
 
@@ -200,10 +198,7 @@ class API
     end
 
     def _get(url_path, *args)
-      response = @@conn.get(@@api_base + url_path, *args) do |request|
-        request.options.timeout = 2.5
-        request.options.open_timeout = 1
-      end
+      response = @@conn.get(@@api_base + url_path, *args)
       if response.body.present?
         body = JSON.parse(response.body)
 
