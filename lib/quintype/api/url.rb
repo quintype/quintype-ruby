@@ -6,7 +6,7 @@ class API
       end
 
       def story_canonical(root, story)
-        root + story['slug']
+        story['canonical_url'] || (root + story['slug'])
       end
 
       def topic (tag_name)
