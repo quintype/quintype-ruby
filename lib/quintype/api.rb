@@ -199,6 +199,8 @@ class API
 
     def _get(url_path, *args)
       response = @@conn.get(@@api_base + url_path, *args)
+      return nil if response.status >= 400
+
       if response.body.present?
         body = JSON.parse(response.body)
 
