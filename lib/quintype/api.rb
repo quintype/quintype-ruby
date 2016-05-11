@@ -27,6 +27,10 @@ class API
       _get("config")
     end
 
+    def sections
+      _get("sections")
+    end
+
     def story(story_id)
       _get("stories/#{story_id}")
     end
