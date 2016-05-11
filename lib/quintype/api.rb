@@ -131,8 +131,8 @@ class API
       _post("unsubscribe", { options: options })
     end
 
-    def save_member_metadata(metadata)
-      _post("member/metadata", { metadata: metadata })
+    def save_member_metadata(metadata, session_cookie)
+      _post("member/metadata", { metadata: metadata }, session_cookie)
     end
 
     def check_email(email)
