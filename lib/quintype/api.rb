@@ -31,8 +31,8 @@ class API
       _get("stories/#{story_id}")
     end
 
-    def story_by_slug(slug)
-      _get("stories-by-slug", { slug: slug })
+    def story_by_slug(slug, params = {})
+      _get("stories-by-slug", params.merge({ slug: slug }))
     end
 
     def related_stories(story_id, section, fields = [])

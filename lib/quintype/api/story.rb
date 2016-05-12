@@ -54,8 +54,8 @@ class API
         end
       end
 
-      def find_by_slug(slug)
-        if story = API.story_by_slug(slug).presence
+      def find_by_slug(slug, params = {})
+        if story = API.story_by_slug(slug, params).presence
           wrap(story['story'])
         end
       end
