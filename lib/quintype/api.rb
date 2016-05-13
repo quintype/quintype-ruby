@@ -135,6 +135,10 @@ class API
       _post("member/metadata", { metadata: metadata }, session_cookie)
     end
 
+    def get_member_metadata(session_cookie)
+      _get("member/metadata", {}, {'auth_token': session_cookie})
+    end
+
     def check_email(email)
       _get("member/check", { email: email })
     end
