@@ -205,8 +205,12 @@ class API
       end
     end
 
-    def _get(url_path, *args)
-      response = @@conn.get(@@api_base + url_path, *args)
+    def _get(url_path, params={}, args={})
+      response = @@conn.get(@@api_base + url_path, params) do |request|
+        request.headers['Content-Type'] = 'application/json'
+        request.headers['X-QT-AUTH'] = args[:auth_token] if args[:auth_token]
+      end
+      puts response.inspect
       return nil if response.status >= 400
 
       if response.body.present?
