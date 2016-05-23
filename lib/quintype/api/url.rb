@@ -9,6 +9,10 @@ class API
         story['canonical_url'] || (root + story['slug'])
       end
 
+      def story_amp(root, story)
+        root + 'amp/' + story['slug'].split('/').last
+      end
+
       def topic (tag_name)
         "/topic/" + encode_uri_component(tag_name)
       end
