@@ -210,7 +210,7 @@ class API
         request.headers['Content-Type'] = 'application/json'
         request.headers['X-QT-AUTH'] = args[:auth_token] if args[:auth_token]
       end
-      puts response.inspect
+
       return nil if response.status >= 400
 
       if response.body.present?
