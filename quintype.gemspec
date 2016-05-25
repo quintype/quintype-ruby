@@ -1,13 +1,13 @@
 Gem::Specification.new do |s|
   s.name        = 'quintype'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2016-02-19'
   s.summary     = "quintype!"
   s.platform    = Gem::Platform::RUBY
   s.description = "A simple hello world gem"
   s.authors     = [""]
   s.email       = 'dev-core@quintype.com'
-  s.files       = ["lib/quintype.rb"]
+  s.files       = `git ls-files`.split("\n")
   s.homepage    =
     'http://rubygems.org/gems/quintype'
   s.license       = 'MIT'
