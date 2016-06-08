@@ -27,6 +27,10 @@ class API
       _get("config")
     end
 
+    def sections
+      _get("sections")
+    end
+
     def story(story_id)
       _get("stories/#{story_id}")
     end
@@ -127,8 +131,12 @@ class API
       _post("unsubscribe", { options: options })
     end
 
-    def save_member_metadata(metadata)
-      _post("member/metadata", { metadata: metadata })
+    def save_member_metadata(metadata, session_cookie)
+      _post("member/metadata", { metadata: metadata }, session_cookie)
+    end
+
+    def get_member_metadata(session_cookie)
+      _get("member/metadata", {}, {'auth_token': session_cookie})
     end
 
     def check_email(email)
@@ -197,8 +205,12 @@ class API
       end
     end
 
-    def _get(url_path, *args)
-      response = @@conn.get(@@api_base + url_path, *args)
+    def _get(url_path, params={}, args={})
+      response = @@conn.get(@@api_base + url_path, params) do |request|
+        request.headers['Content-Type'] = 'application/json'
+        request.headers['X-QT-AUTH'] = args[:auth_token] if args[:auth_token]
+      end
+
       return nil if response.status >= 400
 
       if response.body.present?
