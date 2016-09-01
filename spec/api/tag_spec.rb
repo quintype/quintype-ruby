@@ -10,9 +10,14 @@ describe API::Tag do
 
 
   describe '#to_h' do
+    it 'has tag', :vcr => { cassette_name: "api_tag_find" } do
+      tag = described_class.find_by_name({name: "bloomberg"})
+      expect(tag.to_h.keys).to include("tag")
+    end
+
     it 'serializes tag' , :vcr => { cassette_name: "api_tag_find" } do
       tag = described_class.find_by_name({name: "bloomberg"})
-      expect(tag.to_h.keys).to include("name", "meta_description")
+      expect(tag.to_h["tag"].keys).to include("name", "meta_description")
     end
   end
 end
