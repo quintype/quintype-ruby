@@ -28,7 +28,7 @@ http_interactions:
       - Jetty(9.3.7.v20160115)
     body:
       encoding: ASCII-8BIT
-      string: '{"tag": {"id": 12345, "name": "bloomberg", "meta_description": "publisher"}}'
+      string: '{"tag": {"id": 12345, "name": "bloomberg", "meta-description": "publisher"}}'
     http_version:
   recorded_at: Fri, 22 Apr 2016 03:29:52 GMT
 recorded_with: VCR 3.0.1

@@ -14,8 +14,8 @@ class API
         new(tag) if tag
       end
 
-      def find_by_name(params)
-        if tag = API.tag_by_name(params[:name])
+      def find_by_name(name)
+        if tag = API.tag_by_name(name)
           wrap(tag)
         end
       end
