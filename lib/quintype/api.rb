@@ -35,6 +35,10 @@ class API
       _get("stories/#{story_id}")
     end
 
+    def tag_by_name(tag_name)
+      _get("tag/#{tag_name}")
+    end
+
     def story_by_slug(slug, params = {})
       _get("stories-by-slug", params.merge({ slug: slug }))
     end
@@ -136,7 +140,7 @@ class API
     end
 
     def get_member_metadata(session_cookie)
-      _get("member/metadata", {}, {'auth_token': session_cookie})
+      _get("member/metadata", {}, { auth_token: session_cookie})
     end
 
     def check_email(email)
