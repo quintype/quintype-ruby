@@ -26,7 +26,7 @@ class API
     end
 
     def to_h(config={})
-      tag
+      self.tag["tag"]
     end
   end
 end
