@@ -1,3 +1,5 @@
+require 'uri'
+
 class API
   class Tag
     attr_reader :tag
@@ -15,7 +17,7 @@ class API
       end
 
       def find_by_name(name)
-        if tag = API.tag_by_name(name)
+        if tag = API.tag_by_name(URI.encode(name))
           wrap(tag)
         end
       end
