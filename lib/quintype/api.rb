@@ -78,6 +78,11 @@ class API
            }.merge(options))
     end
 
+    # This is a hack because we can't migrate entire APIs to use v1 [Varun - 14th December 2016]
+    def collection(slug, options)
+      _get("v1/collections/" + slug, options)
+    end
+
     def story_collection(options)
       _get("story-collection", options)
     end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    quintype (0.0.6)
+    quintype (0.0.8)
       activesupport (~> 4.2)
       faraday (~> 0.9)
 
