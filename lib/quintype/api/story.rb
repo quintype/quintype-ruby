@@ -1,6 +1,6 @@
 require_relative './story/reading_time'
 
-class API
+class Api
   class Story
     attr_reader :story
     include ReadingTime
@@ -17,12 +17,12 @@ class API
       end
 
       def where(params, opts={})
-        stories = API.stories(params, opts)
+        stories = Api.stories(params, opts)
         wrap_all(stories)
       end
 
       def find(params, opts={})
-        if stories = API.stories(params, opts).presence
+        if stories = Api.stories(params, opts).presence
           story = stories.first
           wrap(story)
         end
@@ -47,7 +47,7 @@ class API
             hash[param.first] = param.last.merge(_type: 'stories')
             hash
           end
-          response = API.bulk_post(requests: params)
+          response = Api.bulk_post(requests: params)
           response['results']
         else
           []
@@ -55,18 +55,18 @@ class API
       end
 
       def find_by_slug(slug, params = {})
-        if story = API.story_by_slug(slug, params).presence
+        if story = Api.story_by_slug(slug, params).presence
           wrap(story['story'])
         end
       end
 
       def all_video_stories
-        stories = API.videos
+        stories = Api.videos
         wrap_all(stories['stories'])
       end
 
       def all
-        stories = API.stories({})
+        stories = Api.stories({})
         wrap_all(stories)
       end
     end

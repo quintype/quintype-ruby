@@ -2,12 +2,12 @@ require 'faraday'
 require 'json'
 require 'active_support/all'
 
-# API models
+# Api models
 require_relative './api/story'
 require_relative './api/stack'
 require_relative './api/url'
 
-class API
+class Api
   class << self
     def establish_connection(host, conn = Faraday.new(url: host))
       @@host = host

@@ -1,4 +1,4 @@
-class API
+class Api
   class Story
     module ReadingTime
       extend ActiveSupport::Concern

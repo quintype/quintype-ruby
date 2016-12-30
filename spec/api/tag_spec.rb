@@ -1,6 +1,6 @@
 require_relative '../../lib/quintype/api/tag'
 
-describe API::Tag do
+describe Api::Tag do
   describe '#find_by_name' , :vcr => { cassette_name: "api_tag_find" } do
     it 'finds the tag by name' do
       tag = described_class.find_by_name("bloomberg")

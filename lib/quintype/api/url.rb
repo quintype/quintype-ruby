@@ -1,4 +1,4 @@
-class API
+class Api
   class URL
     class << self
       def story (story)

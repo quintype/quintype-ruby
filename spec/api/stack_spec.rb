@@ -1,7 +1,7 @@
 # coding: utf-8
 require_relative '../../lib/quintype/api/stack'
 
-describe API::Stack do
+describe Api::Stack do
   describe '#all', :vcr => { cassette_name: "api_stack_all" } do
     it 'gives all stacks' do
       stacks = described_class.all

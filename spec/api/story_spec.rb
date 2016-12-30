@@ -1,6 +1,6 @@
 require_relative '../../lib/quintype/api/story'
 
-describe API::Story do
+describe Api::Story do
   describe '#find' , :vcr => { cassette_name: "api_story_find" } do
     it 'finds the stories for the required params' do
       story = described_class.find({limit: 1})
@@ -49,7 +49,7 @@ describe API::Story do
 
   describe '#find_by_stacks'  do
     it 'gives stories for stacks' , :vcr => { cassette_name: "api_story_find_by_stacks" } do
-      config = API.config
+      config = Api.config
       stacks_stories = described_class.find_by_stacks(config['layout']['stacks'])
       stack_names = config['layout']['stacks'].map { |s| s['story_group'].gsub('-','_') }
       expect(stacks_stories.keys).to eq(stack_names)
@@ -59,7 +59,7 @@ describe API::Story do
     end
 
     it 'gives stories for stacks for a params passed', :vcr => { cassette_name: "api_story_find_by_stacks_and_sections" } do
-      config = API.config
+      config = Api.config
       stacks_stories = described_class.find_by_stacks(config['layout']['stacks'], {'section' => 'India'})
       stack_names = config['layout']['stacks'].map { |s| s['story_group'].gsub('-','_') }
       expect(stacks_stories.keys).to eq(stack_names)
@@ -85,7 +85,7 @@ describe API::Story do
     end
 
     it 'serializes stories based on config', :vcr => { cassette_name: "api_story_find_config" } do
-      config = API.config
+      config = Api.config
       stories = described_class.where({limit: 1})
       story = stories.first.story
       serialized_story = stories.first.to_h(config.merge('root_url' => 'http://example.com'))

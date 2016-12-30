@@ -31,7 +31,7 @@ RSpec.configure do |config|
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
   config.before(:all) do
-    API.establish_connection("http://localhost:8001")
+    Api.establish_connection("http://localhost:8001")
   end
 
   config.expect_with :rspec do |expectations|

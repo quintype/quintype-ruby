@@ -1,4 +1,4 @@
-class API
+class Api
   class Author
     attr_reader :author
     class << self
@@ -17,12 +17,12 @@ class API
         if params['ids'].kind_of? Array
           params['ids'] = params['ids'].join ","
         end
-        authors = API.authors(params)
+        authors = Api.authors(params)
         wrap_all(authors)
       end
 
       def find(params)
-        if authors = API.authors({ids: params}).presence
+        if authors = Api.authors({ids: params}).presence
           author = authors.first
           wrap(author)
         end
