@@ -59,6 +59,12 @@ class Api
           wrap(story['story'])
         end
       end
+      
+      def find_by_id(id)
+        if story = Api.story_by_id(id).presence
+          wrap(story['story'])
+        end
+      end
 
       def all_video_stories
         stories = Api.videos
