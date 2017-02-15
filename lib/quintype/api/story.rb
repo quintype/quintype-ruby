@@ -44,7 +44,7 @@ class API
       def find_in_bulk(params)
         if params.present?
           params = params.inject({}) do |hash, param|
-            hash[param.first] = param.last.merge(_type: 'stories')
+            hash[param.first] = param.last.merge(_type: param.last[:_type] || 'stories')
             hash
           end
           response = API.bulk_post(requests: params)
