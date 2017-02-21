@@ -186,6 +186,10 @@ class API
       _get("stories/#{story_id}/votes", options)
     end
 
+    def preview_story(id)
+      _get("v1/preview/story/#{id}")
+    end
+
     private
 
     def _post(url_path, body, session_cookie=nil)
