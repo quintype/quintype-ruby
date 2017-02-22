@@ -186,8 +186,8 @@ class API
       _get("stories/#{story_id}/votes", options)
     end
 
-    def preview_story(id)
-      _get("v1/preview/story/#{id}")
+    def preview_story(public_preview_key)
+      _get("v1/preview/story/#{public_preview_key}")
     end
 
     private
