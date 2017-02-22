@@ -42,7 +42,7 @@ class Api
     def story_by_slug(slug, params = {})
       _get("stories-by-slug", params.merge({ slug: slug }))
     end
-    
+
     def story_by_id(id)
       _get("stories/#{id}")
     end
@@ -190,8 +190,8 @@ class Api
       _get("stories/#{story_id}/votes", options)
     end
 
-    def preview_story(id)
-      _get("v1/preview/story/#{id}")
+    def preview_story(public_preview_key)
+      _get("v1/preview/story/#{public_preview_key}")
     end
 
     private
