@@ -35,6 +35,10 @@ class API
       _get("stories/#{story_id}")
     end
 
+    def slugify(x)
+      _get("slugify/#{x}")
+    end
+
     def tag_by_name(tag_name)
       _get("tag/#{tag_name}")
     end
