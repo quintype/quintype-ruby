@@ -39,6 +39,10 @@ class Api
       _get("tag/#{tag_name}")
     end
 
+    def tag_by_slug(tag_slug)
+      _get("v1/tag/#{tag_slug}")
+    end
+
     def story_by_slug(slug, params = {})
       _get("stories-by-slug", params.merge({ slug: slug }))
     end

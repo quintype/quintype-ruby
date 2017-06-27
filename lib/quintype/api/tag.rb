@@ -21,6 +21,12 @@ class Api
           wrap(tag)
         end
       end
+
+      def find_by_slug(slug)
+        if tag = Api.tag_by_slug(URI.encode(slug))
+          wrap(tag)
+        end
+      end
     end
 
     def initialize(tag)
