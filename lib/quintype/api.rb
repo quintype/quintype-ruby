@@ -40,7 +40,7 @@ class Api
     end
 
     def tag_by_slug(tag_slug)
-      _get("v1/tag/#{tag_slug}")
+      _get("v1/tags/#{tag_slug}")
     end
 
     def story_by_slug(slug, params = {})
