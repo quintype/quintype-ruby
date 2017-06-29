@@ -18,13 +18,13 @@ class Api
 
       def find_by_name(name)
         if tag = Api.tag_by_name(URI.encode(name))
-          wrap(tag)
+          wrap(tag["tag"])
         end
       end
 
-      def find_by_slug(slug)
-        if tag = Api.tag_by_slug(URI.encode(slug))
-          wrap(tag)
+      def find_all_by_slug(slug)
+        if response = Api.tags_by_slug(URI.encode(slug))
+          wrap_all(response["tags"])
         end
       end
     end
@@ -34,7 +34,7 @@ class Api
     end
 
     def to_h(config={})
-      self.tag["tag"]
+      self.tag
     end
   end
 end

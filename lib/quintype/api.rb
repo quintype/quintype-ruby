@@ -39,7 +39,7 @@ class Api
       _get("tag/#{tag_name}")
     end
 
-    def tag_by_slug(tag_slug)
+    def tags_by_slug(tag_slug)
       _get("v1/tags/#{tag_slug}")
     end
 
