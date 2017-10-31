@@ -12,7 +12,7 @@ class API
     def establish_connection(host, conn = Faraday.new(url: host))
       @@host = host
       @@api_base = host + '/api/'
-      @@bulk_cache = ActiveSupport::Cache::MemoryStore.new
+      @@bulk_cache ||= ActiveSupport::Cache::MemoryStore.new
       @@conn = conn
     end
 
