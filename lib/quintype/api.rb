@@ -12,6 +12,7 @@ class API
     def establish_connection(host, conn = Faraday.new(url: host))
       @@host = host
       @@api_base = host + '/api/'
+      @@bulk_cache = ActiveSupport::Cache::MemoryStore.new
       @@conn = conn
     end
 
@@ -21,6 +22,21 @@ class API
 
     def bulk_post(params)
       _post("bulk", params)
+    end
+
+    def bulk_cached(params)
+      location = @@bulk_cache.fetch(params) do |params|
+        response = @@conn.post(@@api_base + "bulk-request", params) do |request|
+          request.headers['Content-Type'] = 'application/json'
+          request.body = params.to_json
+        end
+        if response.status == 303 && response.headers["Location"]
+          response.headers["Location"]
+        else
+          raise "Did not recieve a location header, status #{response.status}"
+        end
+      end
+      _get(location.sub(/^\/api\//, ""))
     end
 
     def config

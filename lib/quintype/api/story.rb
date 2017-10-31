@@ -41,13 +41,25 @@ class API
         end
       end
 
+      def prepare_bulk(params)
+        params.inject({}) do |hash, param|
+          hash[param.first] = param.last.merge(_type: param.last[:_type] || 'stories')
+          hash
+        end
+      end
+
       def find_in_bulk(params)
         if params.present?
-          params = params.inject({}) do |hash, param|
-            hash[param.first] = param.last.merge(_type: param.last[:_type] || 'stories')
-            hash
-          end
-          response = API.bulk_post(requests: params)
+          response = API.bulk_post(requests: prepare_bulk(params))
+          response['results']
+        else
+          []
+        end
+      end
+
+      def find_in_bulk_cached(params)
+        if params.present?
+          response = API.bulk_cached(requests: prepare_bulk(params))
           response['results']
         else
           []
