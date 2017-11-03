@@ -37,7 +37,7 @@ class API
           response.headers["Location"]
         elsif response.status == 200 && response.headers["Content-Location"]
           response_body = keywordize(JSON.parse(response.body))
-          log_warning("The faraday adapter is configured to follow redirects by default. Using the Content-Location header")
+          log_info("The faraday adapter is configured to follow redirects by default. Using the Content-Location header")
           response.headers["Content-Location"]
         else
           raise "Did not recieve a location header, status #{response.status}"
@@ -274,9 +274,9 @@ class API
       arr.join(',') if arr.present?
     end
 
-    def log_warning(*args)
+    def log_info(*args)
       return unless defined?(Rails)
-      Rails.logger.warn(*args)
+      Rails.logger.info(*args)
     end
   end
 end
