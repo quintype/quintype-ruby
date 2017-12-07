@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'quintype'
-  s.version     = '0.0.13'
+  s.version     = '0.0.14'
   s.date        = '2016-02-19'
   s.summary     = "quintype!"
   s.platform    = Gem::Platform::RUBY
