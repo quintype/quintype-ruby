@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bloombergquint.staging.quintype.io/api/v1/entities?limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - public,max-age=15
+      Content-Length:
+      - '322'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 07 Dec 2017 17:34:23 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lhr6329-LHR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1512668063.306186,VS0,VE288
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entities":[{"updated-at":1512544059081,"category":"NULL","stock-industry":{"id":41454,"name":"Miscellaneous"},"publisher-id":26,"name":"Sanghvi
+        Brands Ltd.","nse-code":"NULL","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45667,"isin":"INE204Y01010","last-updated-by":88299,"aliases":"","stock-id":"1002880","created-at":1512544059081,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540782"}],"total":1}'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 17:34:23 GMT
+recorded_with: VCR 3.0.3

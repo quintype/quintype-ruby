@@ -218,6 +218,18 @@ class API
       _get("v1/preview/story/#{public_preview_key}")
     end
 
+    def entities(params)
+      _get("v1/entities", params)
+    end
+
+    def find_entity(id)
+      _get("v1/entities/#{id}")
+    end
+
+    def sub_entity(entity_id, sub_entity_id)
+      _get("v1/entities/#{entity_id}/#{sub_entity_id}")
+    end
+
     private
 
     def _post(url_path, body, session_cookie=nil)

@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bloombergquint.staging.quintype.io/api/v1/entities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - public,max-age=15
+      Content-Length:
+      - '1323'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 07 Dec 2017 17:17:41 GMT
+      Age:
+      - '73'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lhr6333-LHR
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      X-Timer:
+      - S1512667061.312046,VS0,VE1
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entities":[{"updated-at":1512544059081,"category":"NULL","stock-industry":{"id":41454,"name":"Miscellaneous"},"publisher-id":26,"name":"Sanghvi
+        Brands Ltd.","nse-code":"NULL","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45667,"isin":"INE204Y01010","last-updated-by":88299,"aliases":"","stock-id":"1002880","created-at":1512544059081,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540782"},{"updated-at":1512544059055,"category":"NULL","stock-industry":{"id":41537,"name":"Finance
+        - Stock Broking"},"publisher-id":26,"name":"5Paisa Capital Ltd.","nse-code":"5PAISA","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45666,"isin":"INE618L01018","last-updated-by":88299,"aliases":"","stock-id":"1002879","created-at":1512544059055,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540776"},{"updated-at":1512544059029,"category":"NULL","stock-industry":{"id":41521,"name":"Refractories"},"publisher-id":26,"name":"IFGL
+        Refractories Ltd.","nse-code":"","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45665,"isin":"INE133Y01011","last-updated-by":88299,"aliases":"","stock-id":"1002878","created-at":1512544059029,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540774"},{"updated-at":1512544059003,"category":"NULL","stock-industry":{"id":41488,"name":"Electronics
+        - Components"},"publisher-id":26,"name":"Pulz Electronics Ltd.","nse-code":"PULZ","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45664,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002877","created-at":1512544059003,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058977,"category":"NULL","stock-industry":{"id":41430,"name":"Engineering"},"publisher-id":26,"name":"ANI
+        Integrated Services Ltd.","nse-code":"ANI","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45663,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002876","created-at":1512544058977,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058951,"category":"NULL","stock-industry":{"id":41454,"name":"Miscellaneous"},"publisher-id":26,"name":"SecUR
+        Credential Ltd.","nse-code":"SECURCRED","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45662,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002875","created-at":1512544058951,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058914,"category":"NULL","stock-industry":{"id":41544,"name":"Finance
+        - Investment"},"publisher-id":26,"name":"Tube Investments of India Ltd.","nse-code":"TIINDIA","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45661,"isin":"INE974X01010","last-updated-by":88299,"aliases":"","stock-id":"1002874","created-at":1512544058914,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540762"},{"updated-at":1512544058883,"category":"NULL","stock-industry":{"id":41466,"name":"Logistics"},"publisher-id":26,"name":"Mahindra
+        Logistics Ltd.","nse-code":"MAHLOG","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45660,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002873","created-at":1512544058883,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058857,"category":"NULL","stock-industry":{"id":41548,"name":"Insurance"},"publisher-id":26,"name":"HDFC
+        Standard Life Insurance Co Ltd.","nse-code":"HDFCLIFE","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45659,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002872","created-at":1512544058857,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058831,"category":"NULL","stock-industry":{"id":41548,"name":"Insurance"},"publisher-id":26,"name":"The
+        New India Assurance Co. Ltd.","nse-code":"NIACL","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45658,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002871","created-at":1512544058831,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058805,"category":"NULL","stock-industry":{"id":41541,"name":"Consumer
+        Food"},"publisher-id":26,"name":"Sheetal Cool Products Ltd.","nse-code":"NULL","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45657,"isin":"INE501Y01019","last-updated-by":88299,"aliases":"","stock-id":"1002870","created-at":1512544058805,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540757"},{"updated-at":1512544058777,"category":"NULL","stock-industry":{"id":41553,"name":"Household
+        & Personal Products"},"publisher-id":26,"name":"Khadim India Ltd","nse-code":"KHADIM","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45656,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002869","created-at":1512544058777,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058735,"category":"NULL","stock-industry":{"id":41454,"name":"Miscellaneous"},"publisher-id":26,"name":"Kaarya
+        Facilities And Services Ltd.","nse-code":"NULL","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45655,"isin":"INE282Y01016","last-updated-by":88299,"aliases":"","stock-id":"1002868","created-at":1512544058735,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540756"},{"updated-at":1512544058708,"category":"NULL","stock-industry":{"id":41447,"name":"Trading"},"publisher-id":26,"name":"DP
+        Abhushan Ltd.","nse-code":"DPABHUSHAN","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45654,"isin":"INE266Y01019","last-updated-by":88299,"aliases":"","stock-id":"1002867","created-at":1512544058708,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058682,"category":"NULL","stock-industry":{"id":41544,"name":"Finance
+        - Investment"},"publisher-id":26,"name":"Reliance Nippon Life Asset Management
+        Ltd.","nse-code":"RNAM","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45653,"isin":"NULL","last-updated-by":88299,"aliases":"","stock-id":"1002866","created-at":1512544058682,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058655,"category":"NULL","stock-industry":{"id":41500,"name":"Wood
+        & Wood Products"},"publisher-id":26,"name":"Milton Industries Ltd.","nse-code":"MILTON","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45652,"isin":"INE376Y01016","last-updated-by":88299,"aliases":"","stock-id":"1002865","created-at":1512544058655,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058629,"category":"NULL","stock-industry":{"id":41466,"name":"Logistics"},"publisher-id":26,"name":"Shreeji
+        Translogistics Ltd.","nse-code":"NULL","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45651,"isin":"INE402Y01010","last-updated-by":88299,"aliases":"","stock-id":"1002864","created-at":1512544058629,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540738"},{"updated-at":1512544058603,"category":"NULL","stock-industry":{"id":41431,"name":"Pharmaceuticals
+        & Drugs"},"publisher-id":26,"name":"Shree Ganesh Remedies Ltd.","nse-code":"NULL","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45650,"isin":"INE414Y01015","last-updated-by":88299,"aliases":"","stock-id":"1002863","created-at":1512544058603,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"540737"},{"updated-at":1512544058577,"category":"NULL","stock-industry":{"id":41553,"name":"Household
+        & Personal Products"},"publisher-id":26,"name":"Omfurn India Ltd.","nse-code":"OMFURN","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45649,"isin":"INE338Y01016","last-updated-by":88299,"aliases":"","stock-id":"1002862","created-at":1512544058577,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"},{"updated-at":1512544058550,"category":"NULL","stock-industry":{"id":41552,"name":"Forgings"},"publisher-id":26,"name":"Tirupati
+        Forge Ltd.","nse-code":"FORGE","type":"stock","stock-exchange":{"id":32728,"name":"BSE"},"entity-type-id":32,"deleted-at":null,"created-by":88299,"id":45648,"isin":"INE319Y01016","last-updated-by":88299,"aliases":"","stock-id":"1002861","created-at":1512544058550,"stock-info-provider":{"id":32730,"name":"MarketsMojo"},"bse-code":"NULL"}],"total":20}'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 17:17:20 GMT
+recorded_with: VCR 3.0.1

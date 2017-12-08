@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem 'rspec', '~> 3.4'
+  gem 'rspec', '~> 3.7.0'
 end
 
 group :development, :test do
@@ -12,6 +12,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'vcr'
-  gem 'webmock'
+  gem 'vcr', '~> 3.0.3'
+  gem 'webmock', '~> 3.1.1'
 end
