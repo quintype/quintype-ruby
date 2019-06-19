@@ -57,6 +57,15 @@ class API
         end
       end
 
+      def find_in_v1_bulk(params)
+        if params.present?
+          response = API.bulk_post_v1(requests: prepare_bulk(params))
+          response['results']
+        else
+          []
+        end
+      end
+
       def find_in_bulk_cached(params)
         if params.present?
           response = API.bulk_cached(requests: prepare_bulk(params))

@@ -24,6 +24,10 @@ class API
       _post("bulk", params)
     end
 
+    def bulk_post_v1(params)
+      _post("v1/bulk/", params)
+    end
+
     def bulk_cached(params)
       response_body = nil # Used in case of manticore auto following redirect. Ugly side effect
 
