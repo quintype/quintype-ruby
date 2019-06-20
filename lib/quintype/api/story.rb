@@ -66,6 +66,15 @@ class API
         end
       end
 
+      def find_in_bulk_v1_cached(params)
+        if params.present?
+          response = API.bulk_v1_cached(requests: prepare_bulk(params))
+          response['results']
+        else
+          []
+        end
+      end
+
       def find_by_slug(slug, params = {})
         if story = API.story_by_slug(slug, params).presence
           wrap(story['story'])

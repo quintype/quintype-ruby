@@ -46,6 +46,30 @@ class API
 
       response_body || _get(location.sub(/^\/api\//, ""))
     end
+    
+    def bulk_v1_cached(params)
+      response_body = nil # Used in case of manticore auto following redirect. Ugly side effect
+
+      location = @@bulk_cache.fetch(params) do |params|
+        response = @@conn.post("/api/v1/bulk-request", params) do |request|
+          request.headers['Content-Type'] = 'application/json'
+          request.body = params.to_json
+        end
+
+        if response.status == 303 && response.headers["Location"]
+          response.headers["Location"]
+        elsif response.status == 200 && response.headers["Content-Location"]
+          response_body = keywordize(JSON.parse(response.body))
+          log_info("The faraday adapter is configured to follow redirects by default. Using the Content-Location header")
+          response.headers["Content-Location"]
+        else
+          raise "Did not recieve a location header, status #{response.status}"
+        end
+      end
+
+      response_body || _get(location.sub(/^\/api\//, ""))
+    end
+
 
     def config
       _get("config")
