@@ -13,5 +13,5 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
 
   s.add_dependency 'faraday', '~> 0.9'
-  s.add_dependency 'activesupport', '~> 4.2'
+  s.add_dependency 'activesupport', '>= 4.2', '< 8.0'
 end
